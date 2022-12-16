@@ -1,0 +1,34 @@
+.adventages {
+  width: 279px;
+  margin: 0 auto;
+}
+
+.adventages__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.adventages__container {
+  margin-left: 80px;
+  margin-right: 20px;
+}
+
+.adventages__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 20px;
+}
+
+.adventages__item {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}

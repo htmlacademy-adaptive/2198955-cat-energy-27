@@ -1,0 +1,38 @@
+.stock {
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.stock__indent {
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  position: absolute;
+  top: 187px;
+  width: 116px;
+  left: 50%;
+  margin-left: -58px;
+}
+
+.stock__desc {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.stock__layer {
+  display: block;
+  margin: 0 auto;
+}
+
+.stock__bg-effect {
+  position: relative;
+}
+
+.stock__bg-effect-layer {
+  position: absolute;
+  right: 20px;
+}

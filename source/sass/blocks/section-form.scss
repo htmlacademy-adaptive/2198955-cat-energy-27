@@ -1,0 +1,142 @@
+.section-form {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0 auto;
+  width: 280px;
+  margin-bottom: 32px;
+}
+
+.section-form__titel {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.section-form__titel-indent {
+  margin-bottom: 37px;
+}
+
+.section-form__desc {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.section-form__desc-indent {
+  margin-bottom: 39px;
+  display: block;
+}
+
+.section-form__lable-style {
+  border: none;
+  padding-bottom: 35px;
+}
+
+.section-form__about-cat {
+  margin-bottom: 32px;
+}
+
+.section-form__lable-style,
+.section-form__about-cat,
+.section-form__list,
+.section-form__control-lable {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  // margin: 0;
+  padding: 0;
+}
+
+.fieldsets-indent {
+  border: none;
+  padding: 0;
+  margin-left: 0;
+}
+
+.indent-name {
+  width: 228px;
+  padding: 0;
+  margin-bottom: 14px;
+}
+
+.indetnt-weight {
+  width: 207px;
+  padding: 0;
+  margin-bottom: 14px;
+}
+
+.indent-age {
+  width: 173px;
+  padding: 0;
+  margin-bottom: 14px;
+}
+
+.section-form__form {
+  margin-bottom: 21px;
+}
+
+.select-program-catalog {
+  border: none;
+  margin-bottom: 32px;
+}
+
+.section-form__list {
+  list-style-type: none;
+  color: #222222;
+  margin-bottom: 32px;
+  padding: 0;
+}
+
+.section-form__legend-style {
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.legend-style-indent {
+  margin-bottom: 35px;
+}
+
+.section-form__control-lable {
+  color: #000000;
+}
+
+.contacts-owner {
+  margin-bottom: 10px;
+}
+
+.contacts-owner__input {
+  margin-bottom: 14px;
+}
+
+.section-form__item {
+  margin-bottom: 13px;
+}
+
+.textarea {
+  margin-bottom: 23px;
+}
+
+.controls-input-indent {
+  margin-bottom: 13px;
+}
+
+.list-indent {
+  margin-bottom: 22px;
+}
+
+.section-form__footnote {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #000000;
+}
+
+.form-cooperation {
+  background-color: #f2f2f2;
+  width: 320px;
+}

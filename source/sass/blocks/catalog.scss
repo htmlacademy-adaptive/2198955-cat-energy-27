@@ -1,0 +1,77 @@
+.catalog {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.catalog__titel {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.catalog__indent {
+  margin: 0;
+  margin-bottom: 59px;
+}
+
+.catalog__product-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.catalog__product {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 33px;
+}
+
+.catalog__product-image {
+  width: 140px;
+}
+
+.catalog__product-description {
+  width: 140px;
+}
+
+.catalog__product-titel {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #222222;
+}
+
+.catalog__description-term {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+  width: 50%;
+}
+
+.catalog__description-definition {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+  margin: 0;
+  width: 50%;
+}
+
+.catalog__description {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.catalog__show-more-button {
+  width: 280px;
+}
