@@ -24,10 +24,16 @@
   font-display: swap;
 }
 .page__body {
-  color: #000000;
+  color: var(--primary-color);
   margin: 0 auto;
   width: 320px;
   background-color: #ffffff;
+}
+
+:root {
+  --oswald: "Oswald", "Arial", sans-serif;
+  --lato: "Lato", "Tahoma", sans-serif;
+  --primary-color: #000000;
 }
 
 .main-header {
@@ -57,7 +63,7 @@
 }
 
 .main__promo-text {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--oswald);
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -70,7 +76,7 @@
 }
 
 .main__promo-text-description {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--oswald);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -101,7 +107,7 @@
 }
 
 .main-catlog__programs-title {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--oswald);
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -136,30 +142,25 @@
   flex-direction: column;
 }
 
-.main-catlog__programs {
-  width: 280px;
-  background: #f2f2f2;
-}
-
-.adventages {
+.advantages {
   width: 279px;
   margin: 0 auto;
 }
 
-.adventages__title {
-  font-family: "Oswald", sans-serif;
+.advantages__title {
+  font-family: var(--oswald);
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
 }
 
-.adventages__container {
+.advantages__container {
   margin-left: 80px;
   margin-right: 20px;
 }
 
-.adventages__list {
+.advantages__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -167,7 +168,7 @@
   gap: 20px;
 }
 
-.adventages__item {
+.advantages__item {
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -186,7 +187,7 @@
 }
 
 .example__title {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--oswald);
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -194,7 +195,7 @@
 }
 
 .example__desc {
-  font-family: "Lato", sans-serif;
+  font-family: var(--lato);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -216,7 +217,7 @@
 }
 
 .example__term {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--oswald);
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -224,7 +225,7 @@
 }
 
 .example__defination {
-  font-family: "Lato", sans-serif;
+  font-family: var(--lato);
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -236,7 +237,7 @@
 }
 
 .example__food-coast-desc {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--oswald);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -250,7 +251,7 @@
 }
 
 .cooperation__title {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--oswald);
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -260,12 +261,17 @@
 }
 
 .cooperation__addres {
-  font-family: "Lato", sans-serif;
+  font-family: var(--lato);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #444444;
+}
+
+.cooperation--form {
+  background-color: #f2f2f2;
+  width: 320px;
 }
 
 .main-footer {
@@ -278,7 +284,7 @@
 
 .button {
   background-color: #68b738;
-  font-family: "Oswald", sans-serif;
+  font-family: var(--oswald);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -307,15 +313,12 @@
   margin: 0 auto;
 }
 
-.catalog__titel {
-  font-family: "Oswald", sans-serif;
+.catalog__title {
+  font-family: var(--oswald);
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-}
-
-.catalog__indent {
   margin: 0;
   margin-bottom: 59px;
 }
@@ -340,8 +343,8 @@
   width: 140px;
 }
 
-.catalog__product-titel {
-  font-family: "Oswald", sans-serif;
+.catalog__product-title {
+  font-family: var(--oswald);
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -350,7 +353,7 @@
 }
 
 .catalog__description-term {
-  font-family: "Lato", sans-serif;
+  font-family: var(--lato);
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -360,7 +363,7 @@
 }
 
 .catalog__description-definition {
-  font-family: "Lato", sans-serif;
+  font-family: var(--lato);
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -380,12 +383,8 @@
   width: 280px;
 }
 
-.catalog__show-more {
-  margin-bottom: 50px;
-}
-
-.catalog__show-more-titel {
-  font-family: "Oswald", sans-serif;
+.catalog__show-more-title {
+  font-family: var(--oswald);
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -396,7 +395,7 @@
 }
 
 .catalog__show-more-desc {
-  font-family: "Lato", sans-serif;
+  font-family: var(--lato);
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -405,20 +404,8 @@
   color: #444444;
 }
 
-.catalog__show-more-button {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #444444;
-  background-color: #f2f2f2;
-}
-
 .extra__titel {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--osvald);
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -443,7 +430,7 @@
 }
 
 .extra__product-titel {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--osvald);
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -454,7 +441,7 @@
 }
 
 .extra__desc-item {
-  font-family: "Lato", sans-serif;
+  font-family: var(--lato);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -485,7 +472,7 @@
 }
 
 .stock__desc {
-  font-family: "Lato", sans-serif;
+  font-family: var(--oswald);
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -507,8 +494,50 @@
   right: 20px;
 }
 
+.fieldsets-indent {
+  border: none;
+  padding: 0;
+  margin-left: 0;
+}
+
+.fieldsets-indent--catalog {
+  margin-bottom: 32px;
+}
+
+.fieldsets-indent--contacts-owner {
+  margin-bottom: 10px;
+}
+
+.fieldsets-indent--textarea {
+  margin-bottom: 23px;
+}
+
+.indent-age {
+  width: 173px;
+  padding: 0;
+  margin-bottom: 14px;
+}
+
+.legend-style-indent {
+  margin-bottom: 35px;
+}
+
+.controls-input-indent {
+  margin-bottom: 13px;
+}
+
+.list-indent {
+  margin-bottom: 22px;
+}
+
+.indent-name {
+  width: 228px;
+  padding: 0;
+  margin-bottom: 14px;
+}
+
 .section-form {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--oswald);
   font-style: normal;
   font-weight: 400;
   margin: 0 auto;
@@ -516,13 +545,13 @@
   margin-bottom: 32px;
 }
 
-.section-form__titel {
+.section-form__title {
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
 }
 
-.section-form__titel-indent {
+.section-form__title-indent {
   margin-bottom: 37px;
 }
 
@@ -537,7 +566,7 @@
   display: block;
 }
 
-.section-form__lable-style {
+.section-form__lable {
   border: none;
   padding-bottom: 35px;
 }
@@ -546,10 +575,7 @@
   margin-bottom: 32px;
 }
 
-.section-form__lable-style,
-.section-form__about-cat,
-.section-form__list,
-.section-form__control-lable {
+.section-form__style {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -557,40 +583,11 @@
   padding: 0;
 }
 
-.fieldsets-indent {
-  border: none;
-  padding: 0;
-  margin-left: 0;
-}
-
-.indent-name {
-  width: 228px;
-  padding: 0;
-  margin-bottom: 14px;
-}
-
-.indetnt-weight {
-  width: 207px;
-  padding: 0;
-  margin-bottom: 14px;
-}
-
-.indent-age {
-  width: 173px;
-  padding: 0;
-  margin-bottom: 14px;
-}
-
 .section-form__form {
   margin-bottom: 21px;
 }
 
-.select-program-catalog {
-  border: none;
-  margin-bottom: 32px;
-}
-
-.section-form__list {
+.section-form__style--list {
   list-style-type: none;
   color: #222222;
   margin-bottom: 32px;
@@ -602,50 +599,31 @@
   line-height: 26px;
 }
 
-.legend-style-indent {
-  margin-bottom: 35px;
-}
-
-.section-form__control-lable {
-  color: #000000;
-}
-
-.contacts-owner {
-  margin-bottom: 10px;
-}
-
-.contacts-owner__input {
-  margin-bottom: 14px;
+.section-form__style--control {
+  color: var(--primary-color);
 }
 
 .section-form__item {
   margin-bottom: 13px;
 }
 
-.textarea {
-  margin-bottom: 23px;
-}
-
-.controls-input-indent {
-  margin-bottom: 13px;
-}
-
-.list-indent {
-  margin-bottom: 22px;
-}
-
 .section-form__footnote {
-  font-family: "Lato", sans-serif;
+  font-family: var(--lato);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
-  color: #000000;
+  color: var(--primary-color);
 }
 
-.form-cooperation {
-  background-color: #f2f2f2;
-  width: 320px;
+.contacts-owner__input {
+  margin-bottom: 14px;
+}
+
+.indetnt-weight {
+  width: 207px;
+  padding: 0;
+  margin-bottom: 14px;
 }
 /*# sourceMappingURL=style.css.map */
