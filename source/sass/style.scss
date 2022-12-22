@@ -3,42 +3,29 @@
 @use "./blocks/main-header.scss";
 @use "./blocks/main-nav.scss";
 @use "./blocks/main.scss";
-@use "./blocks/main__promo-section.scss";
 @use "./blocks/main-catlog.scss";
-@use "./blocks/main-header__wrapper.scss";
-@use "./blocks/main-catlog__programs.scss";
-@use "./blocks/adventages.scss";
-@use "./blocks/adventages__container.scss";
-@use "./blocks/adventages__list.scss";
+@use "./blocks/advantages.scss";
 @use "./blocks/example.scss";
-@use "./blocks/example__indicator.scss";
 @use "./blocks/cooperation.scss";
-@use "./blocks/map.scss";
 @use "./blocks/main-footer.scss";
-@use "./blocks/socials.scss";
-@use "./blocks/main-footer__copyright.scss";
 @use "./blocks/button.scss";
 @use "./blocks/main-button.scss";
 @use "./blocks/visually-hidden.scss";
 
 //catalog
 
-@use "./blocks/catalog-main.scss";
 @use "./blocks/catalog.scss";
-@use "./blocks/catalog__product-list.scss";
-@use "./blocks/catalog__show-more.scss";
 @use "./blocks/extra.scss";
 @use "./blocks/stock.scss";
-@use "./blocks/button-item.scss";
 
 //form
 
+@use "./blocks/fieldsets-indent.scss";
+@use "./blocks/indent-age.scss";
+@use "./blocks/legend-style.scss";
+@use "./blocks/controls-input-indent.scss";
+@use "./blocks/list-indent.scss";
+@use "./blocks/indent-name.scss";
 @use "./blocks/section-form.scss";
-@use "./blocks/section-form__form.scss";
-@use "./blocks/about-cat.scss";
-@use "./blocks/select-program-catalog.scss";
 @use "./blocks/contacts-owner.scss";
-@use "./blocks/textarea.scss";
-@use "./blocks/extra-data.scss";
-@use "./blocks/section-form__list.scss";
-@use "./blocks/button-form.scss";
+@use "./blocks/indetnt-weight.scss";

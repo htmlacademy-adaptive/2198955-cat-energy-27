@@ -1,22 +1,22 @@
-.adventages {
+.advantages {
   width: 279px;
   margin: 0 auto;
 }
 
-.adventages__title {
-  font-family: "Oswald", sans-serif;
+.advantages__title {
+  font-family: var(--oswald);
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
 }
 
-.adventages__container {
+.advantages__container {
   margin-left: 80px;
   margin-right: 20px;
 }
 
-.adventages__list {
+.advantages__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -24,7 +24,7 @@
   gap: 20px;
 }
 
-.adventages__item {
+.advantages__item {
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;

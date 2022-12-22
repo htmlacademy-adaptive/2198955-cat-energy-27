@@ -3,15 +3,12 @@
   margin: 0 auto;
 }
 
-.catalog__titel {
-  font-family: "Oswald", sans-serif;
+.catalog__title {
+  font-family: var(--oswald);
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-}
-
-.catalog__indent {
   margin: 0;
   margin-bottom: 59px;
 }
@@ -36,8 +33,8 @@
   width: 140px;
 }
 
-.catalog__product-titel {
-  font-family: "Oswald", sans-serif;
+.catalog__product-title {
+  font-family: var(--oswald);
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -46,7 +43,7 @@
 }
 
 .catalog__description-term {
-  font-family: "Lato", sans-serif;
+  font-family: var(--lato);
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -56,7 +53,7 @@
 }
 
 .catalog__description-definition {
-  font-family: "Lato", sans-serif;
+  font-family: var(--lato);
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -74,4 +71,25 @@
 
 .catalog__show-more-button {
   width: 280px;
+}
+
+.catalog__show-more-title {
+  font-family: var(--oswald);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.catalog__show-more-desc {
+  font-family: var(--lato);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #444444;
 }

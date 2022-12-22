@@ -23,8 +23,15 @@
 }
 
 .page__body {
-  color: #000000;
+  color: var(--primary-color);
   margin: 0 auto;
   width: 320px;
   background-color: #ffffff;
 }
+
+:root {
+  --oswald: "Oswald", "Arial", sans-serif;
+  --lato: "Lato", "Tahoma", sans-serif;
+  --primary-color: #000000;
+}
+
