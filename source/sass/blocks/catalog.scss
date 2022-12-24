@@ -4,7 +4,7 @@
 }
 
 .catalog__title {
-  font-family: var(--oswald);
+  font-family: var(--title-font);
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -34,31 +34,31 @@
 }
 
 .catalog__product-title {
-  font-family: var(--oswald);
+  font-family: var(--title-font);
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #222222;
+  color: --title-color;
 }
 
 .catalog__description-term {
-  font-family: var(--lato);
+  font-family: var(--description-font);
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: var(--description-color);
   width: 50%;
 }
 
 .catalog__description-definition {
-  font-family: var(--lato);
+  font-family: var(--description-font);
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: var(--description-color);
   margin: 0;
   width: 50%;
 }
@@ -74,22 +74,22 @@
 }
 
 .catalog__show-more-title {
-  font-family: var(--oswald);
+  font-family: var(--title-font);
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: #111111;
+  color: var(--primary-color);
 }
 
 .catalog__show-more-desc {
-  font-family: var(--lato);
+  font-family: var(--description-font);
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   text-align: center;
-  color: #444444;
+  color: var(--description-color);
 }

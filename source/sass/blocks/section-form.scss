@@ -1,5 +1,5 @@
 .section-form {
-  font-family: var(--oswald);
+  font-family: var(--title-font);
   font-style: normal;
   font-weight: 400;
   margin: 0 auto;
@@ -41,7 +41,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #444444;
+  color: var(--description-font);
   padding: 0;
 }
 
@@ -51,7 +51,7 @@
 
 .section-form__style--list {
   list-style-type: none;
-  color: #222222;
+  color: var(--title-font);
   margin-bottom: 32px;
   padding: 0;
 }
@@ -61,7 +61,7 @@
   line-height: 26px;
 }
 
-.section-form__style--control {
+.section-form__style-control {
   color: var(--primary-color);
 }
 
@@ -71,11 +71,15 @@
 }
 
 .section-form__footnote {
-  font-family: var(--lato);
+  font-family: var(--description-font);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
   color: var(--primary-color);
+}
+
+.section-form__controls-input {
+  margin-bottom: 13px;
 }

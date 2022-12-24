@@ -1,5 +1,5 @@
-.extra__titel {
-  font-family: var(--osvald);
+.extra__title {
+  font-family: var(--title-font);
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -23,25 +23,25 @@
   margin-bottom: 31px;
 }
 
-.extra__product-titel {
-  font-family: var(--osvald);
+.extra__product-title {
+  font-family: var(--title-font);
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   text-align: center;
   text-transform: uppercase;
-  color: #222222;
+  color: var(--title-color);
 }
 
 .extra__desc-item {
-  font-family: var(--lato);
+  font-family: var(--description-font);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   text-align: center;
-  color: #444444;
+  color: var(--description-color);
 }
 
 .extra__desc {

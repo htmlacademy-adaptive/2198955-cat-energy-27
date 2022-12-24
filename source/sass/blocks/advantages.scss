@@ -4,7 +4,7 @@
 }
 
 .advantages__title {
-  font-family: var(--oswald);
+  font-family: var(--title-font);
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -25,10 +25,10 @@
 }
 
 .advantages__item {
-  font-family: "Lato", sans-serif;
+  font-family: var(--description-font);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: var(--description-color);
 }

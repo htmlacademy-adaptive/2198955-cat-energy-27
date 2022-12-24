@@ -7,3 +7,40 @@
   margin-bottom: 45px;
   width: 280px;
 }
+
+
+@media (min-width: 768px) {
+  .main-header__logo-text {
+    display: none;
+  }
+
+  .main-nav__button-toggle {
+    display: none;
+  }
+
+  // .main-header__logo-icon {
+  //   display: none;
+  // }
+
+  .main-header {
+    width: 700px;
+    justify-content: space-between;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .main-header__logo-icon--tablet {
+    background-image: url("../../img/index/logo-tablet.svg");
+    width: 174px;
+    height: 52px;
+    display: block;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-header {
+    width: 1220px;
+    margin-right: 120px;
+    margin-left: 120px;
+  }
+}

@@ -4,25 +4,25 @@
 }
 
 .cooperation__title {
-  font-family: var(--oswald);
+  font-family: var(--title-font);
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #111111;
+  color: var(--secondary-color);
 }
 
 .cooperation__addres {
-  font-family: var(--lato);
+  font-family: var(--description-font);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #444444;
+  color: var(--description-color);
 }
 
 .cooperation--form {
-  background-color: #f2f2f2;
+  background-color: var(--background-color-secondary);
   width: 320px;
 }
