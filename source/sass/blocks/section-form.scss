@@ -1,0 +1,85 @@
+.section-form {
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: 400;
+  margin: 0 auto;
+  width: 280px;
+  margin-bottom: 32px;
+}
+
+.section-form__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.section-form__title-indent {
+  margin-bottom: 37px;
+}
+
+.section-form__desc {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.section-form__desc-indent {
+  margin-bottom: 39px;
+  display: block;
+}
+
+.section-form__lable {
+  border: none;
+  padding-bottom: 35px;
+}
+
+.section-form__about-cat {
+  margin-bottom: 32px;
+}
+
+.section-form__style {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--description-font);
+  padding: 0;
+}
+
+.section-form__form {
+  margin-bottom: 21px;
+}
+
+.section-form__style--list {
+  list-style-type: none;
+  color: var(--title-font);
+  margin-bottom: 32px;
+  padding: 0;
+}
+
+.section-form__legend-style {
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.section-form__style-control {
+  color: var(--primary-color);
+}
+
+
+.section-form__item {
+  margin-bottom: 13px;
+}
+
+.section-form__footnote {
+  font-family: var(--description-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.section-form__controls-input {
+  margin-bottom: 13px;
+}

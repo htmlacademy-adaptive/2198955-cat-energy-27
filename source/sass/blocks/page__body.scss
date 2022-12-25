@@ -1,0 +1,19 @@
+
+.page__body {
+  color: var(--primary-color);
+  margin: 0 auto;
+  width: 320px;
+  background-color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .page__body {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .page__body {
+    width: 1440px;
+  }
+}

@@ -1,0 +1,28 @@
+.cooperation {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.cooperation__title {
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+
+.cooperation__addres {
+  font-family: var(--description-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--description-color);
+}
+
+.cooperation--form {
+  background-color: var(--background-color-secondary);
+  width: 320px;
+}

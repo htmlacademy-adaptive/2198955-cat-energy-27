@@ -1,0 +1,34 @@
+.advantages {
+  width: 279px;
+  margin: 0 auto;
+}
+
+.advantages__title {
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.advantages__container {
+  margin-left: 80px;
+  margin-right: 20px;
+}
+
+.advantages__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 20px;
+}
+
+.advantages__item {
+  font-family: var(--description-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--description-color);
+}

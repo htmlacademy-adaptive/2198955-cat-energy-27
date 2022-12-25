@@ -3,16 +3,17 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page__body">
   <header class="main-header">
     <div class="main-header__logo">
       <a class="main-header__logo-icon" href="index.html"><img src="img/index/logo-mobile.svg" alt="логотип энерго кот"
-          width="100" height="100"></a>
+        width="33" height="38"></a>
     </div>
-    <div class="main-header__wrapper">
 
       <div class="main-header__logo-text">
         <a class="main-header__logo-link" href="index.html"><img src="img/index/logo-txt.svg" alt="логотип"></a>
@@ -31,122 +32,115 @@
           </ul>
         </div>
       </nav>
-    </div>
+
   </header>
   <section class="section-form">
-    <h2 class="section-form__titel">
+    <h2 class="section-form__title section-form__title-indent">
       Подбор программы
     </h2>
-    <span class="section-form__desc">Заполните анкету, и мы подберем
+    <span class="section-form__desc section-form__desc-indent">Заполните анкету, и мы подберем
       программу питания для вашего кота</span>
     <form class="section-form__form section-form__form--name" action="https://echo.htmlacademy.ru" method="post">
 
-      <fieldset>
-        <label>ИМЯ:*</label>
-        <input class="section-form__input-form" name="name" placeholder="барсик" type="text">
-        <label>Вес (кг):*</label>
-        <input class="section-form__input-form" name="weight" placeholder="7" type="number">
-        <label>Возраст (лет):</label>
-        <input class="section-form__input-form" name="age" placeholder="7" type="number">
+      <fieldset class="fieldsets-indent--about-cat fieldsets-indent">
+        <label class="section-form__style">Имя:*</label>
+        <input class="section-form__input-form indent-name" name="name" placeholder="барсик" type="text">
+        <label class="section-form__style">Вес (кг):*</label>
+        <input class="section-form__input-form indetnt-weight" name="weight" placeholder="7" type="number">
+        <label class="section-form__style">Возраст (лет):</label>
+        <input class="section-form__input-form indent-age" name="age" placeholder="7" type="number">
 
       </fieldset>
-      <fieldset>
+      <fieldset class="fieldsets-indent--catalog fieldsets-indent">
 
-        <ul class="section-form__list">
+        <ul class="section-form__style section-form__style--list">
           <li class="section-form__item">
             <label class="section-form__controls">
-              <input class="section-form__controls-input visually-hidden" type="radio" name="program" checked
+              <input type="radio" name="program" checked
                 value="похудение">
               <span class="section-form__control-mark"></span>
-              <span class="section-form__control-lable">похудение</span>
+              <span class="section-form__lable">похудение</span>
             </label>
           </li>
 
           <li class="section-form__item">
             <label class="section-form__controls">
-              <input class="section-form__controls-input visually-hidden" type="radio" name="program"
+              <input type="radio" name="program"
                 value="набор массы">
               <span class="section-form__control-mark"></span>
-              <span class="section-form__control-lable">набор массы</span>
+              <span class="section-form__lable">набор массы</span>
             </label>
           </li>
 
           <li class="section-form__item">
             <label class="section-form__controls">
-              <input class="section-form__controls-input visually-hidden" name="program" type="radio"
+              <input  name="program" type="radio"
                 value="Не знаю (Нужен ваш совет)">
               <span class="section-form__control-mark"></span>
-              <span class="section-form__control-lable">Не знаю (Нужен ваш совет)</span>
+              <span class="section-form__lable">Не знаю (Нужен ваш совет)</span>
             </label>
           </li>
         </ul>
       </fieldset>
 
-      <fieldset>
-        <legend>Контактные данные
+      <fieldset class="fieldsets-indent--contacts-owner fieldsets-indent">
+        <legend class="section-form__legend-style legend-style-indent">Контактные данные
           (владельца кота)</legend>
 
         <label>
-          <span class="section-form__control-lable">E-mail:*</span>
-          <input type="email" value="kuklachev@gmail.com" name="e-mail">
+          <span class="section-form__style section-form__style--control">E-mail:*</span>
+          <input class="contacts-owner__input" type="email" value="kuklachev@gmail.com" name="e-mail">
         </label>
-
-
         <label>
-          <span class="section-form__control-lable">Телефон:*</span>
-          <input type="tel" value="8 (960) 900-60-90" name="phone">
+          <span class="section-form__style section-form__style--control">Телефон:*</span>
+          <input  class="contacts-owner__input" type="tel" value="8 (960) 900-60-90" name="phone">
         </label>
 
       </fieldset>
-      <h3>Комментарий</h3>
-      <fieldset>
+
+      <fieldset class="fieldsets-indent--textarea fieldsets-indent">
+        <legend class="section-form__legend-style legend-style-indent">Комментарий</legend>
         <textarea placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
 
-      <fieldset>
-        <legend>Дополнительно</legend>
-        <ul class="section-form__list">
+      <fieldset class="fieldsets-indent">
+        <legend class="section-form__legend-style legend-style-indent">Дополнительно</legend>
+        <ul class="section-form__style section-form__style--list list-indent">
           <li class="section-form__item">
             <label class="section-form__controls">
-              <input class="section-form__controls-input visually-hidden" type="checkbox" value="sweetener" name="extra"
+              <input class="section-form__controls-input " type="checkbox" value="sweetener" name="extra"
                 checked>
-
-              <span class="section-form__control-lable">сахарозаменитель</span>
+              <span class="section-form__style section-form__style--control">сахарозаменитель</span>
             </label>
           </li>
-
           <li class="section-form__item">
             <label class="section-form__controls">
-              <input class="section-form__controls-input visually-hidden" type="checkbox" value="frash water"
+              <input class="section-form__controls-input " type="checkbox" value="frash water"
                 name="extra">
-
-              <span class="section-form__control-lable">питьевая вода</span>
-            </label>
-          </li>
-
-          <li class="section-form__item">
-            <label class="section-form__controls">
-              <input class="section-form__controls-input visually-hidden" type="checkbox" value="milk" name="extra">
-
-              <span class="section-form__control-lable">молоко</span>
+              <span class="section-form__style section-form__style--control">питьевая вода</span>
             </label>
           </li>
           <li class="section-form__item">
             <label class="section-form__controls">
-              <input class="section-form__controls-input visually-hidden" type="checkbox" value="vitamin" name="extra">
-
-              <span class="section-form__control-lable">витамины</span>
+              <input class="section-form__controls-input " type="checkbox" value="milk" name="extra">
+              <span class="section-form__style section-form__style--control">молоко</span>
+            </label>
+          </li>
+          <li class="section-form__item">
+            <label class="section-form__controls">
+              <input class="section-form__controls-input " type="checkbox" value="vitamin" name="extra">
+              <span class="section-form__style section-form__style--control">витамины</span>
             </label>
           </li>
         </ul>
       </fieldset>
-      <div>
-        <button type="submit">отправить заявку</button>
+      <div class="button-form">
+        <button class="button" type="submit">отправить заявку</button>
       </div>
     </form>
-    <span>* — Обязательные поля</span>
+    <span class="section-form__footnote">* — Обязательные поля</span>
   </section>
-  <div class="cooperation">
+  <div class="cooperation--form">
     <p class="cooperation__title">приглашаем к сотрудничеству дилеров!</p>
     <address class="cooperation__addres">ул. Большая
       Конюшенная, д. 19/8
@@ -154,7 +148,9 @@
   </div>
   <div class="map"></div>
   <footer class="main-footer">
-    <div class="main-footer__logo"></div>
+    <div class="main-header__logo-text main-footer__logo-text">
+      <a class="main-header__logo-link" href="index.html"><img src="img/index/logo-txt.svg" alt="логотип"></a>
+    </div>
     <div class="socials">
       <a class="socials__link socials__link--vkontakte" href="#"></a>
       <a class="socials__link socials__link--youtube" href="#"></a>

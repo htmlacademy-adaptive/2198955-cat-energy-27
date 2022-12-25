@@ -1,0 +1,47 @@
+.main__promo-section {
+  position: relative;
+}
+
+.main__promo-text {
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--background-color-primary);
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+}
+
+.main__promo-text-description {
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: var(--background-color-primary);
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+}
+
+.main__promo-image {
+  margin-bottom: 138px;
+}
+
+.main__promo-image::after {
+  content: "";
+  background-image: url("../../img/index/Rectangle-17.svg");
+  width: 320px;
+  height: 302px;
+  position: absolute;
+}
+
+.main__promo-background {
+  position: absolute;
+  top: 167px;
+  left: 20px;
+}
