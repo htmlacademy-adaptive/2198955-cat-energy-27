@@ -5,27 +5,65 @@
   margin: 0 auto;
   width: 280px;
   margin-bottom: 32px;
+
+  @media (min-width: 768px) {
+    width: 630px;
+    margin-bottom: 72px;
+  }
+
+
+  @media (min-width: 1440px) {
+    width: 1220px;
+  }
+}
+
+.section-form__form-wrapper {
+  @media (min-width: 1440px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .section-form__title {
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .section-form__title-indent {
   margin-bottom: 37px;
+
+
+  @media (min-width: 768px) {
+    margin-top: 15px;
+    margin-bottom: 54px;
+  }
 }
 
 .section-form__desc {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .section-form__desc-indent {
   margin-bottom: 39px;
   display: block;
+
+  @media (min-width: 768px) {
+    margin-bottom: 66px;
+    width: 323px;
+  }
 }
 
 .section-form__lable {
@@ -43,6 +81,11 @@
   text-transform: uppercase;
   color: var(--description-font);
   padding: 0;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .section-form__form {
@@ -52,22 +95,49 @@
 .section-form__style--list {
   list-style-type: none;
   color: var(--title-font);
-  margin-bottom: 32px;
   padding: 0;
+  margin: 0;
+  margin-bottom: 32px;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 221px 189px;
+    column-gap: 123px;
+  }
+
+  @media (min-width: 1440px) {
+    display: flex;
+    width: 1125px;
+  }
 }
 
 .section-form__legend-style {
   font-size: 24px;
   line-height: 26px;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .section-form__style-control {
   color: var(--primary-color);
 }
 
+.section-form__controls {
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
 
 .section-form__item {
   margin-bottom: 13px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 32px;
+  }
 }
 
 .section-form__footnote {
@@ -78,6 +148,14 @@
   line-height: 16px;
   text-align: center;
   color: var(--primary-color);
+
+  @media (min-width: 768px) {
+    margin-left: 32px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-left: 84px;
+  }
 }
 
 .section-form__controls-input {

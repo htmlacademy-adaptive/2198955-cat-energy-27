@@ -2,12 +2,23 @@
   font-family: var(--title-font);
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
+  text-transform: uppercase;
+
+  @media (max-width: 768px) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
-@media (max-width: 768px) {
-  .main-nav__container {
+.main-nav__container {
+  @media (max-width: 768px) {
     display: none;
   }
 }
@@ -16,20 +27,20 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
 
-@media (min-width: 768px) {
-  .main-nav__list {
+  @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
     width: 440px;
   }
-}
 
-@media (min-width: 1440px) {
-  .main-nav__list {
+  @media (min-width: 1440px) {
     display: flex;
     justify-content: space-between;
     width: 478px;
   }
 }
+
+
+
+

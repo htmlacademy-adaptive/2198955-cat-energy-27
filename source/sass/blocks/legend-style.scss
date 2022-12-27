@@ -1,3 +1,7 @@
 .legend-style-indent {
   margin-bottom: 35px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 76px;
+  }
 }

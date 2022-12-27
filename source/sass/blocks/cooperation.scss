@@ -1,6 +1,25 @@
+
+
 .cooperation {
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 628px;
+    display: flex;
+    justify-content: space-between;
+    min-height: 199px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 565px;
+  }
+}
+
+.cooperation--catalog {
+  @media (min-width: 768px) {
+    background-color: var(--background-color-secondary);
+  }
 }
 
 .cooperation__title {
@@ -11,6 +30,24 @@
   line-height: 20px;
   text-transform: uppercase;
   color: var(--secondary-color);
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    width: 172px;
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 60px;
+    margin-left: 70px;
+    margin-bottom: 56px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 163px;
+    margin-top: 60px;
+    margin-left: 80px;
+    margin-bottom: 56px;
+  }
 }
 
 .cooperation__addres {
@@ -20,9 +57,33 @@
   font-size: 14px;
   line-height: 20px;
   color: var(--description-color);
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    width: 160px;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 56px;
+    margin-right: 70px;
+    margin-bottom: 63px;
+
+    @media (min-width: 1440px) {
+      width: 155px;
+      margin-top: 56px;
+      margin-right: 80px;
+      margin-bottom: 63px;
+    }
+  }
 }
 
 .cooperation--form {
   background-color: var(--background-color-secondary);
   width: 320px;
+
+  @media (min-width: 768px) {
+    width: 768px;
+    display: flex;
+    justify-content: space-between;
+  }
 }

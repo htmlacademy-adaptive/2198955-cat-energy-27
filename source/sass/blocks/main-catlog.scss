@@ -1,5 +1,15 @@
 
 
+.main-catlog {
+  @media (min-width: 1440px) {
+    width: 1220px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 570px 570px;
+    gap: 80px;
+  }
+}
+
 .main-catlog__programs-title {
   font-family: var(--title-font);
   font-style: normal;
@@ -19,6 +29,10 @@
   font-size: 14px;
   line-height: 18px;
   color: var(--description-color);
+
+  @media (min-width: 748px) {
+    width: 340px;
+  }
 }
 
 .main-catlog__programs-link {
@@ -34,4 +48,11 @@
   justify-content: center;
   margin: 0 auto;
   flex-direction: column;
+  width: 280px;
+
+  @media (min-width: 748px) {
+    width: 708px;
+  }
+
+
 }
