@@ -1,6 +1,5 @@
 
-
-.main-catlog {
+.main-catalog {
   @media (min-width: 1440px) {
     width: 1220px;
     margin: 0 auto;
@@ -10,7 +9,7 @@
   }
 }
 
-.main-catlog__programs-title {
+.main-catalog__programs-title {
   font-family: var(--title-font);
   font-style: normal;
   font-weight: 400;
@@ -22,7 +21,7 @@
   margin-bottom: 30px;
 }
 
-.main-catlog__programs-description {
+.main-catalog__programs-description {
   font-family: var(--description-font);
   font-style: normal;
   font-weight: 400;
@@ -35,7 +34,7 @@
   }
 }
 
-.main-catlog__programs-link {
+.main-catalog__programs-link {
   font-family: var(--title-font);
   font-style: normal;
   font-weight: 400;
@@ -43,7 +42,7 @@
   line-height: 16px;
 }
 
-.main-catlog__programs {
+.main-catalog__programs {
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -53,6 +52,4 @@
   @media (min-width: 748px) {
     width: 708px;
   }
-
-
 }

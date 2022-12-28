@@ -12,7 +12,6 @@
   }
 }
 
-
 .main__promo-text {
   font-family: var(--title-font);
   font-style: normal;
@@ -85,10 +84,7 @@
   top: 167px;
   left: 20px;
 
-  @media (min-width: 764px)  {
+  @media (min-width: 764px) {
     position: static;
   }
-
-
 }
-
