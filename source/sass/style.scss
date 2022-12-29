@@ -12,7 +12,6 @@
 @use "./blocks/main-header.scss";
 @use "./blocks/main-nav.scss";
 @use "./blocks/main.scss";
-@use "./blocks/main-catlog.scss";
 @use "./blocks/advantages.scss";
 @use "./blocks/example.scss";
 @use "./blocks/cooperation.scss";
@@ -23,6 +22,7 @@
 
 //catalog
 
+@use "./blocks/main-catalog.scss";
 @use "./blocks/catalog.scss";
 @use "./blocks/extra.scss";
 @use "./blocks/stock.scss";
@@ -36,12 +36,4 @@
 @use "./blocks/indent-name.scss";
 @use "./blocks/section-form.scss";
 @use "./blocks/contacts-owner.scss";
-@use "./blocks/indetnt-weight.scss";
-
-
-//viewports
-
-:root {
-  --tablet-width: 768px;
-  --desktop-widt: 1440px;
-}
+@use "./blocks/indent-weight.scss";

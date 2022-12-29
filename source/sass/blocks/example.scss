@@ -1,10 +1,29 @@
+.example__wrapper {
+  background-color: #eaeaea;
+
+  @media (min-width: 768px) {
+    width: 768px;
+    margin: 0 auto;
+    min-height: 1000px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 1440px;
+    min-height: 600px;
+  }
+}
+
 .example {
   width: 280px;
   margin: 0 auto;
-}
 
-.example__wrapper {
-  background-color: #eaeaea;
+  @media (min-width: 768px) {
+    width: 708px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 1220px;
+  }
 }
 
 .example__title {
