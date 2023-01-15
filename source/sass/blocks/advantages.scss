@@ -84,7 +84,7 @@
       right: calc(100% + 20px);
       bottom: 0;
       content: "";
-      background-image: url("../../img/index/svg-leaf-mobile.svg");
+      background-image: url("img/index/svg-leaf-mobile.svg");
       width: 60px;
       height: 60px;
       position: absolute;
@@ -98,7 +98,7 @@
       position: absolute;
       content: "";
       background-color: var(--background-color-button);
-      background-image: url("../../img/index/Vector-leaf.svg");
+      background-image: url("img/index/Vector-leaf.svg");
       background-repeat: no-repeat;
       background-position: center;
       top: 10px;
@@ -109,7 +109,7 @@
   &--water::after {
     @media (max-width: 767px) {
       content: "";
-      background-image: url("../../img/index/svg-water-mobile.svg");
+      background-image: url("img/index/svg-water-mobile.svg");
       width: 60px;
       height: 60px;
       position: absolute;
@@ -125,7 +125,7 @@
       position: absolute;
       content: "";
       background-color: var(--background-color-button);
-      background-image: url("../../img/index/Vector-water.svg");
+      background-image: url("img/index/Vector-water.svg");
       background-repeat: no-repeat;
       background-position: center;
       top: 10px;
@@ -136,7 +136,7 @@
   &--eat::after {
     @media (max-width: 767px) {
       content: "";
-      background-image: url("../../img/index/svg-eat-mobile.svg");
+      background-image: url("img/index/svg-eat-mobile.svg");
       width: 60px;
       height: 60px;
       position: absolute;
