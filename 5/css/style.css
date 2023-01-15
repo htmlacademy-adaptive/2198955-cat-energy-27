@@ -643,7 +643,7 @@
 @media (max-width: 767px) {
   .advantages__item--eat::after {
     content: "";
-    background-image: url("img/index/svg-eat-mobile.svg");
+    background-image: url("../img/index/svg-eat-mobile.svg");
     width: 60px;
     height: 60px;
     position: absolute;
