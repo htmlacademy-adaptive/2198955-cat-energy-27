@@ -13,7 +13,7 @@
   &__programs-title-content::after {
     content: "";
     position: absolute;
-    background-image: url("../../img/index/cat_back.svg");
+    background-image: url("./img/index/cat_back.svg");
     width: 50px;
     height: 53px;
     left: 30px;
@@ -23,14 +23,14 @@
       height: 211px;
       content: "";
       position: absolute;
-      background-image: url("../../img/index/cat_back-tablet.svg");
+      background-image: url("./img/index/cat_back-tablet.svg");
       left: calc(100% - 271px);
       background-repeat: no-repeat;
 
       @media (min-width: 1440px) {
         content: "";
         position: absolute;
-        background-image: url("../../img/index/cat_back-desktop.svg");
+        background-image: url("./img/index/cat_back-desktop.svg");
         width: 100px;
         height: 106px;
         background-repeat: no-repeat;
@@ -43,7 +43,7 @@
   &__programs-title-svg::after {
     content: "";
     position: absolute;
-    background-image: url("../../img/index/back-panda.svg");
+    background-image: url("./img/index/back-panda.svg");
     width: 67px;
     height: 50px;
     left: 30px;
@@ -53,14 +53,14 @@
       height: 200px;
       content: "";
       position: absolute;
-      background-image: url("../../img/index/back-panda-tablet.svg");
+      background-image: url("./img/index/back-panda-tablet.svg");
       left: calc(100% - 304px);
       background-repeat: no-repeat;
 
       @media (min-width: 1440px) {
         content: "";
         position: absolute;
-        background-image: url("../../img/index/back-panda-desktop.svg");
+        background-image: url("./img/index/back-panda-desktop.svg");
         width: 134px;
         height: 100px;
         left: 49px;
@@ -146,7 +146,7 @@
 
   &::before {
     content: "";
-    background-image: url("../../img/index/icon-arrow.png");
+    background-image: url("./img/index/icon-arrow.png");
     width: 24px;
     height: 12px;
     position: absolute;

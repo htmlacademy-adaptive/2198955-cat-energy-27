@@ -84,7 +84,7 @@
       right: calc(100% + 20px);
       bottom: 0;
       content: "";
-      background-image: url("img/index/svg-leaf-mobile.svg");
+      background-image: url("./img/index/svg-leaf-mobile.svg");
       width: 60px;
       height: 60px;
       position: absolute;
@@ -98,7 +98,7 @@
       position: absolute;
       content: "";
       background-color: var(--background-color-button);
-      background-image: url("img/index/Vector-leaf.svg");
+      background-image: url("./img/index/Vector-leaf.svg");
       background-repeat: no-repeat;
       background-position: center;
       top: 10px;
@@ -109,7 +109,7 @@
   &--water::after {
     @media (max-width: 767px) {
       content: "";
-      background-image: url("img/index/svg-water-mobile.svg");
+      background-image: url("./img/index/svg-water-mobile.svg");
       width: 60px;
       height: 60px;
       position: absolute;
@@ -152,7 +152,7 @@
       position: absolute;
       content: "";
       background-color: var(--background-color-button);
-      background-image: url("../../img/index/Vector-eat.svg");
+      background-image: url("./img/index/Vector-eat.svg");
       background-repeat: no-repeat;
       background-position: center;
       top: 10px;
@@ -163,7 +163,7 @@
   &--weight::after {
     @media (max-width: 767px) {
       content: "";
-      background-image: url("../../img/index/svg-weight-mobile.svg");
+      background-image: url("./img/index/svg-weight-mobile.svg");
       width: 60px;
       height: 60px;
       position: absolute;
@@ -179,7 +179,7 @@
       position: absolute;
       content: "";
       background-color: var(--background-color-button);
-      background-image: url("../../img/index/Vector-weight.svg");
+      background-image: url("./img/index/Vector-weight.svg");
       background-repeat: no-repeat;
       background-position: center;
       top: 10px;
@@ -194,7 +194,7 @@
       position: absolute;
       content: "";
       top: 10px;
-      background-image: url("../../img/index/first.png");
+      background-image: url("./img/index/first.png");
       background-repeat: no-repeat;
       z-index: -1;
       left: 125px;
@@ -208,7 +208,7 @@
       position: absolute;
       content: "";
       top: 10px;
-      background-image: url("../../img/index/second.png");
+      background-image: url("./img/index/second.png");
       background-repeat: no-repeat;
       z-index: -1;
       left: 125px;
@@ -222,7 +222,7 @@
       position: absolute;
       content: "";
       top: 10px;
-      background-image: url("../../img/index/third.png");
+      background-image: url("./img/index/third.png");
       background-repeat: no-repeat;
       z-index: -1;
       left: 125px;
@@ -236,7 +236,7 @@
       position: absolute;
       content: "";
       top: 10px;
-      background-image: url("../../img/index/fourth.png");
+      background-image: url("./img/index/fourth.png");
       background-repeat: no-repeat;
       z-index: -1;
       left: 125px;
