@@ -1,7 +1,13 @@
+.main {
+  @media (min-width: 1440px) {
+    position: relative;
+  }
+}
+
 .main__promo-section {
   position: relative;
 
-  @media (min-width: 764px) {
+  @media (min-width: 768px) {
     margin: 0 auto;
     width: 709px;
   }
@@ -23,16 +29,26 @@
   padding: 0;
   margin: 0;
   position: absolute;
+  margin-top: 27px;
+  z-index: 1;
 
-  @media (min-width: 764px) {
+  @media (min-width: 768px) {
     color: var(--primary-color);
     font-style: normal;
     font-size: 60px;
     line-height: 60px;
     width: 416px;
-    // margin: 0 auto;
+    text-align: left;
     margin-bottom: 41px;
     position: static;
+    margin-left: 88px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-left: 80px;
+    z-index: 3;
+    position: absolute;
+    margin-top: 37px;
   }
 }
 
@@ -47,6 +63,9 @@
   padding: 0;
   margin: 0;
   position: absolute;
+  margin-top: 112px;
+  z-index: 1;
+  left: 77px;
 
   @media (min-width: 768px) {
     color: var(--primary-color);
@@ -55,13 +74,23 @@
     text-transform: uppercase;
     position: static;
     text-align: left;
+    margin-left: 88px;
+    margin-top: 41px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-left: 7px;
+    position: relative;
+    z-index: 2;
+    display: block;
+    top: 190px;
   }
 }
 
 .main__promo-image {
   margin-bottom: 138px;
 
-  @media (min-width: 764px) {
+  @media (min-width: 768px) {
     background-color: var(--background-color-primary);
     display: none;
   }
@@ -71,12 +100,30 @@
   }
 }
 
-.main__promo-image::after {
+.main__promo-image-wrapper::after {
   content: "";
   background-image: url("../../img/index/Rectangle-17.svg");
   width: 320px;
   height: 302px;
   position: absolute;
+  right: 0;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.main__promo-image-wrapper::before {
+  @media (min-width: 1440px) {
+    content: "";
+    background-image: url("../../img/index/index-background-desktop.jpg");
+    width: 721px;
+    height: 696px;
+    position: absolute;
+    top: -185px;
+    left: 609px;
+    background-size: cover;
+  }
 }
 
 .main__promo-background {
@@ -84,7 +131,46 @@
   top: 167px;
   left: 20px;
 
-  @media (min-width: 764px) {
-    position: static;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.main__promo-wrapper-background::after {
+  @media (min-width: 768px) {
+    position: relative;
+    background-image: url("../../img/index/index-can-tabt.png");
+    width: 709px;
+    height: 609px;
+    content: "";
+    top: 0;
+    left: 77px;
+    background-repeat: no-repeat;
+    display: block;
+    margin-top: 20px;
+  }
+
+  @media (min-width: 1440px) {
+    left: 445px;
+    position: relative;
+    top: -80px;
+    z-index: 0;
+    width: 552px;
+    height: 499px;
+    background-size: cover;
+    content: "";
+    background-image: url("../../img/index/index-can-desktop.png");
+  }
+}
+
+.main__promo-wrapper-background::before {
+  @media (min-width: 1440px) {
+    width: 720px;
+    height: 694px;
+    content: "";
+    top: -185px;
+    left: 610px;
+    background-image: url("../../img/index/Rectangle-17.svg");
+    position: absolute;
   }
 }

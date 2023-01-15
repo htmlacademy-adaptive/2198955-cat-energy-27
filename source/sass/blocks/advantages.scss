@@ -4,13 +4,11 @@
 
   @media (min-width: 768px) {
     margin-left: 30px;
-    min-height: 410px;
   }
 
   @media (min-width: 1440px) {
     width: 1224px;
     margin: 0 auto;
-    min-height: 400px;
   }
 }
 
@@ -20,6 +18,16 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  padding: 0;
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 40px;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+    width: 375px;
+  }
 }
 
 .advantages__container {
@@ -28,6 +36,12 @@
 
   @media (min-width: 768px) {
     margin: 0;
+    width: 617px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 1205px;
+    margin-bottom: 69px;
   }
 }
 
@@ -41,7 +55,7 @@
   @media (min-width: 768px) {
     grid-template-columns: 230px 230px;
     row-gap: 37px;
-    column-gap: 153px;
+    column-gap: 137px;
   }
 
   @media (min-width: 1440px) {
@@ -56,6 +70,186 @@
   font-size: 14px;
   line-height: 18px;
   color: var(--description-color);
+  position: relative;
+  z-index: 1;
+
+  &-last-position {
+    @media (max-width: 767px) {
+      margin-bottom: 53px;
+    }
+  }
+
+  &--leaf::after {
+    @media (max-width: 767px) {
+      right: calc(100% + 20px);
+      bottom: 0;
+      content: "";
+      background-image: url("../../img/index/svg-leaf-mobile.svg");
+      width: 60px;
+      height: 60px;
+      position: absolute;
+    }
+  }
+
+  &--leaf::before {
+    @media (min-width: 768px) {
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      content: "";
+      background-color: var(--background-color-button);
+      background-image: url("../../img/index/Vector-leaf.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      top: 10px;
+      left: 5px;
+    }
+  }
+
+  &--water::after {
+    @media (max-width: 767px) {
+      content: "";
+      background-image: url("../../img/index/svg-water-mobile.svg");
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: 4px;
+      right: calc(100% + 20px);
+    }
+  }
+
+  &--water::before {
+    @media (min-width: 768px) {
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      content: "";
+      background-color: var(--background-color-button);
+      background-image: url("../../img/index/Vector-water.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      top: 10px;
+      left: 5px;
+    }
+  }
+
+  &--eat::after {
+    @media (max-width: 767px) {
+      content: "";
+      background-image: url("../../img/index/svg-eat-mobile.svg");
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: 3px;
+      right: calc(100% + 20px);
+    }
+  }
+
+  &--eat::before {
+    @media (min-width: 768px) {
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      content: "";
+      background-color: var(--background-color-button);
+      background-image: url("../../img/index/Vector-eat.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      top: 10px;
+      left: 5px;
+    }
+  }
+
+  &--weight::after {
+    @media (max-width: 767px) {
+      content: "";
+      background-image: url("../../img/index/svg-weight-mobile.svg");
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: 9px;
+      right: calc(100% + 20px);
+    }
+  }
+
+  &--weight::before {
+    @media (min-width: 768px) {
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      content: "";
+      background-color: var(--background-color-button);
+      background-image: url("../../img/index/Vector-weight.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      top: 10px;
+      left: 5px;
+    }
+  }
+
+  &--leaf-text::after {
+    @media (min-width: 768px) {
+      width: 112px;
+      height: 280px;
+      position: absolute;
+      content: "";
+      top: 10px;
+      background-image: url("../../img/index/first.png");
+      background-repeat: no-repeat;
+      z-index: -1;
+      left: 125px;
+    }
+  }
+
+  &--water-text::after {
+    @media (min-width: 768px) {
+      width: 112px;
+      height: 280px;
+      position: absolute;
+      content: "";
+      top: 10px;
+      background-image: url("../../img/index/second.png");
+      background-repeat: no-repeat;
+      z-index: -1;
+      left: 125px;
+    }
+  }
+
+  &--eat-text::after {
+    @media (min-width: 768px) {
+      width: 112px;
+      height: 280px;
+      position: absolute;
+      content: "";
+      top: 10px;
+      background-image: url("../../img/index/third.png");
+      background-repeat: no-repeat;
+      z-index: -1;
+      left: 125px;
+    }
+  }
+
+  &--weight-text::after {
+    @media (min-width: 768px) {
+      width: 112px;
+      height: 280px;
+      position: absolute;
+      content: "";
+      top: 10px;
+      background-image: url("../../img/index/fourth.png");
+      background-repeat: no-repeat;
+      z-index: -1;
+      left: 125px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    min-height: 280px;
+    padding-top: 151px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 24px;
+  }
 
   @media (min-width: 1440px) {
     width: 250px;

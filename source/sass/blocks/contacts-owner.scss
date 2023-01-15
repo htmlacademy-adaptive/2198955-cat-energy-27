@@ -2,6 +2,9 @@
   margin-bottom: 14px;
   width: 220px;
   padding: 0;
+  border: 1px solid var(--pseudo-third-color);
+  min-height: 45px;
+  padding-top: 4px;
 
   @media (min-width: 768px) {
     width: 548px;
@@ -11,7 +14,22 @@
   @media (min-width: 1440px) {
     width: 486px;
     margin-bottom: 67px;
+    min-height: 52px;
+    margin-top: 76px;
   }
+}
+
+input::placeholder {
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  padding-left: 10px;
+  padding-top: 20px;
+  display: block;
 }
 
 .contacts-owner__input--tel {
@@ -25,5 +43,7 @@
 
   @media (min-width: 1440px) {
     width: 467px;
+    margin-top: 76px;
+    margin-bottom: 67px;
   }
 }

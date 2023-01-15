@@ -1,0 +1,17 @@
+
+.map__style {
+  width: 320px;
+  height: 362px;
+  border: none;
+  display: block;
+
+  @media (min-width: 768px) {
+    width: 768px;
+    height: 400px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 1440px;
+    height: 400px;
+  }
+}
