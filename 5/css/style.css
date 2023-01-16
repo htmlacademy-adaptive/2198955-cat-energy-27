@@ -834,7 +834,7 @@
   margin-bottom: 40px;
   position: relative;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .example__title::before {
     content: "";
     left: 0;
@@ -1101,11 +1101,11 @@
     content: "";
     left: 473px;
     top: -107px;
-    width: 410px;
+    width: 250px;
     height: 512px;
     position: absolute;
     background-repeat: no-repeat;
-    background-image: url("./img/index/cat-right-tablet.png");
+    background-image: url("../img/index/cat-right-tablet.png");
   }
 }
 @media (min-width: 768px) {
@@ -1125,7 +1125,7 @@
   width: 47px;
   height: 256px;
   position: absolute;
-  background-image: url("./img/index/curtain-slider.png");
+  background-image: url("../img/index/curtain-slider.png");
   background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
@@ -1136,7 +1136,7 @@
     top: 0;
     width: 47px;
     position: absolute;
-    background-image: url("./img/index/curtain-slider-tablet.png");
+    background-image: url("../img/index/curtain-slider-tablet.png");
     background-repeat: no-repeat;
   }
 }
@@ -1385,6 +1385,7 @@
 .button--mobile {
   padding: 8px 44px;
   margin: 0 auto;
+  width: 280px;
   margin-bottom: 20px;
 }
 .button--tablet-product-show-more {
