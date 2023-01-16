@@ -74,7 +74,7 @@
   position: relative;
 
   &::before {
-    @media (min-width: 768px) {
+    @media (min-width: 768px) and (max-width: 1439px) {
       content: "";
       left: 0;
       top: 30px;
@@ -324,11 +324,11 @@
       content: "";
       left: 473px;
       top: -107px;
-      width: 410px;
+      width: 250px;
       height: 512px;
       position: absolute;
       background-repeat: no-repeat;
-      background-image: url("./img/index/cat-right-tablet.png");
+      background-image: url("../img/index/cat-right-tablet.png");
     }
   }
 
@@ -348,7 +348,7 @@
     width: 47px;
     height: 256px;
     position: absolute;
-    background-image: url("./img/index/curtain-slider.png");
+    background-image: url("../img/index/curtain-slider.png");
     background-repeat: no-repeat;
 
     @media (min-width: 768px) {
@@ -358,7 +358,7 @@
       top: 0;
       width: 47px;
       position: absolute;
-      background-image: url("./img/index/curtain-slider-tablet.png");
+      background-image: url("../img/index/curtain-slider-tablet.png");
       background-repeat: no-repeat;
     }
 
