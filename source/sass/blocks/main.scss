@@ -102,7 +102,7 @@
 
 .main__promo-image-wrapper::after {
   content: "";
-  background-image: url("./img/index/Rectangle-17.svg");
+  background-image: url("../img/index/Rectangle-17.svg");
   width: 320px;
   height: 302px;
   position: absolute;
@@ -116,7 +116,7 @@
 .main__promo-image-wrapper::before {
   @media (min-width: 1440px) {
     content: "";
-    background-image: url("./img/index/index-background-desktop.jpg");
+    background-image: url("../img/index/index-background-desktop.jpg");
     width: 721px;
     height: 696px;
     position: absolute;
@@ -139,7 +139,7 @@
 .main__promo-wrapper-background::after {
   @media (min-width: 768px) {
     position: relative;
-    background-image: url("./img/index/index-can-tabt.png");
+    background-image: url("../img/index/index-can-tabt.png");
     width: 709px;
     height: 609px;
     content: "";
@@ -159,7 +159,7 @@
     height: 499px;
     background-size: cover;
     content: "";
-    background-image: url("./img/index/index-can-desktop.png");
+    background-image: url("../img/index/index-can-desktop.png");
   }
 }
 
@@ -170,7 +170,7 @@
     content: "";
     top: -185px;
     left: 610px;
-    background-image: url("./img/index/Rectangle-17.svg");
+    background-image: url("../img/index/Rectangle-17.svg");
     position: absolute;
   }
 }

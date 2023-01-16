@@ -54,7 +54,7 @@
   right: 18px;
   width: 80px;
   height: 80px;
-  background-image: url("./img/catalog/icon_gift-tablet.svg");
+  background-image: url("../img/catalog/icon_gift-tablet.svg");
   position: absolute;
 }
 
@@ -76,7 +76,7 @@
       right: 397px;
       width: 80px;
       height: 80px;
-      background-image: url("./img/catalog/icon_gift-tablet.svg");
+      background-image: url("../img/catalog/icon_gift-tablet.svg");
       position: absolute;
     }
   }
@@ -90,7 +90,7 @@
       content: "";
       width: 80px;
       height: 80px;
-      background-image: url("./img/catalog/icon_gift-tablet.svg");
+      background-image: url("../img/catalog/icon_gift-tablet.svg");
       position: absolute;
     }
   }
@@ -107,7 +107,7 @@
 
 .stock__bg-effect {
   @media (min-width: 768px) and (max-width: 1439px) {
-    background-image: url("./img/catalog/Rectangle-tablet-catalog.svg");
+    background-image: url("../img/catalog/Rectangle-tablet-catalog.svg");
     background-repeat: no-repeat;
     width: 707px;
     height: 200px;
@@ -118,7 +118,7 @@
   }
 
   @media (min-width: 1440px) {
-    background-image: url("./img/catalog/Rectangle-desktop-catalog.svg");
+    background-image: url("../img/catalog/Rectangle-desktop-catalog.svg");
     background-repeat: no-repeat;
     width: 245px;
     height: 289px;
@@ -135,11 +135,11 @@
     width: 707px;
     height: 200px;
     margin: 0 auto;
-    background-image: url("./img/catalog/image-tablet-catalog.jpg");
+    background-image: url("../img/catalog/image-tablet-catalog.jpg");
   }
 
   @media (min-width: 1440px) {
-    background-image: url("./img/catalog/image-desktop-catalog.png");
+    background-image: url("../img/catalog/image-desktop-catalog.png");
     background-repeat: no-repeat;
     width: 245px;
     height: 289px;
