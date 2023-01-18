@@ -1,8 +1,12 @@
 
+$breakpoint-desktop: 1440px;
+
+$breakpoint-tablet: 768px;
+
 .main-catalog {
   position: relative;
 
-  @media (min-width: 1440px) {
+  @media (min-width: $breakpoint-desktop) {
     width: 1220px;
     margin: 0 auto;
     display: grid;
@@ -18,7 +22,7 @@
     height: 53px;
     left: 30px;
 
-    @media (min-width: 768px) {
+    @media (min-width: $breakpoint-tablet) {
       width: 200px;
       height: 211px;
       content: "";
@@ -27,7 +31,7 @@
       left: calc(100% - 271px);
       background-repeat: no-repeat;
 
-      @media (min-width: 1440px) {
+      @media (min-width: $breakpoint-desktop) {
         content: "";
         position: absolute;
         background-image: url("../img/index/cat_back-desktop.svg");
@@ -48,7 +52,7 @@
     height: 50px;
     left: 30px;
 
-    @media (min-width: 768px) {
+    @media (min-width: $breakpoint-tablet) {
       width: 268px;
       height: 200px;
       content: "";
@@ -57,7 +61,7 @@
       left: calc(100% - 304px);
       background-repeat: no-repeat;
 
-      @media (min-width: 1440px) {
+      @media (min-width: $breakpoint-desktop) {
         content: "";
         position: absolute;
         background-image: url("../img/index/back-panda-desktop.svg");
@@ -83,7 +87,7 @@
   width: 220px;
   margin-left: 91px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-tablet) {
     margin-top: 77px;
     margin-bottom: 24px;
     font-size: 36px;
@@ -91,7 +95,7 @@
     margin-left: 0;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $breakpoint-desktop) {
     margin-left: 161px;
   }
 }
@@ -108,7 +112,7 @@
   margin: 0;
   margin-bottom: 42px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-tablet) {
     width: 340px;
     padding: 0;
     margin: 0;
@@ -117,7 +121,7 @@
     line-height: 24px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $breakpoint-desktop) {
     width: 457px;
   }
 }
@@ -153,17 +157,17 @@
     left: 134px;
     top: 232px;
 
-    @media (min-width: 768px) {
+    @media (min-width: $breakpoint-tablet) {
       left: 188px;
       top: 287px;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: $breakpoint-desktop) {
       top: 265px;
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-tablet) {
     padding-bottom: 57px;
   }
 }
@@ -181,13 +185,13 @@
   padding-bottom: 22px;
   position: relative;
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-tablet) {
     width: 708px;
     margin-bottom: 30px;
     padding-left: 53px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $breakpoint-desktop) {
     width: 570px;
     margin-bottom: 0;
   }

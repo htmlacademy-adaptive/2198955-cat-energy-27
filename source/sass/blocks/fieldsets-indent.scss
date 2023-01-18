@@ -1,5 +1,10 @@
+
+$breakpoint-desktop: 1440px;
+
+$breakpoint-tablet: 768px;
+
 .fieldsets-indent {
-  @media (min-width: 1440px) {
+  @media (min-width: $breakpoint-desktop) {
     border: none;
     padding: 0;
     margin: 0;
@@ -15,7 +20,7 @@ fieldset {
 }
 
 .fieldsets-indent--about-cat {
-  @media (min-width: 1440px) {
+  @media (min-width: $breakpoint-desktop) {
     width: 570px;
   }
 }
@@ -46,7 +51,7 @@ fieldset {
     }
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $breakpoint-desktop) {
     width: 444px;
   }
 }
@@ -55,13 +60,13 @@ fieldset {
   margin-bottom: 10px;
   position: relative;
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-tablet) {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $breakpoint-desktop) {
     flex-wrap: nowrap;
   }
 }
@@ -80,18 +85,18 @@ fieldset {
     top: -48px;
     border: 2px solid var(--background-color-button);
 
-    @media (min-width: 768px) {
+    @media (min-width: $breakpoint-tablet) {
       width: 478px;
       left: 218px;
       top: -48px;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: $breakpoint-desktop) {
       width: 1108px;
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-tablet) {
     &::after {
       content: "";
       position: absolute;
@@ -100,18 +105,18 @@ fieldset {
       top: -53px;
       border: 2px solid var(--background-color-button);
 
-      @media (min-width: 1440px) {
+      @media (min-width: $breakpoint-desktop) {
         width: 70px;
         left: -110px;
       }
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-tablet) {
     margin-bottom: 65px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $breakpoint-desktop) {
     margin-bottom: 67px;
   }
 }
@@ -127,20 +132,20 @@ fieldset {
     top: -48px;
     border: 2px solid var(--background-color-button);
 
-    @media (min-width: 768px) {
+    @media (min-width: $breakpoint-tablet) {
       width: 446px;
       left: 249px;
       top: -48px;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: $breakpoint-desktop) {
       width: 1078px;
       left: 249px;
       top: -48px;
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-tablet) {
     &::after {
       content: "";
       position: absolute;
@@ -149,7 +154,7 @@ fieldset {
       top: -48px;
       border: 2px solid var(--background-color-button);
 
-      @media (min-width: 1440px) {
+      @media (min-width: $breakpoint-desktop) {
         width: 70px;
         left: -110px;
       }
@@ -162,12 +167,12 @@ fieldset {
   height: 150px;
   border: 1px solid var(--input-color);
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-tablet) {
     width: 631px;
     height: 174px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $breakpoint-desktop) {
     width: 1220px;
     height: 174px;
   }
@@ -176,12 +181,12 @@ fieldset {
 .fieldsets-indent__button-form {
   width: 280px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-tablet) {
     display: flex;
     width: 520px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $breakpoint-desktop) {
     width: 800px;
   }
 }
@@ -190,7 +195,7 @@ fieldset {
   padding: 14px 44px;
   width: 280px;
 
-  @media (min-width: 1440px) {
+  @media (min-width: $breakpoint-desktop) {
     padding: 14px 188px;
     width: 568px;
   }

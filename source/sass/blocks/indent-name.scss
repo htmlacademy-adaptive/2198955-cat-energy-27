@@ -1,14 +1,19 @@
+
+$breakpoint-desktop: 1440px;
+
+$breakpoint-tablet: 768px;
+
 .indent-name {
   width: 228px;
   padding: 0;
   margin-bottom: 14px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-tablet) {
     width: 570px;
     margin-bottom: 20px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $breakpoint-desktop) {
     width: 509px;
   }
 }

@@ -1,13 +1,19 @@
+$breakpoint-mobile: 767px;
+
+$breakpoint-desktop: 1440px;
+
+$breakpoint-tablet: 768px;
+
 .extra {
   margin-left: 20px;
   position: relative;
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-tablet) {
     width: 707px;
     margin: 0 auto;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $breakpoint-desktop) {
     width: 896px;
     margin-left: 110px;
     margin-bottom: 86px;
@@ -31,15 +37,19 @@
     position: absolute;
     background-color: var(--background-color-button);
 
-    @media (min-width: 768px) {
+    @media (min-width: $breakpoint-tablet) {
       width: 328px;
       left: 410px;
       top: 23px;
     }
+
+    @media (min-width: $breakpoint-desktop) {
+      top: 53px;
+    }
   }
 
   &::before {
-    @media (min-width: 768px) {
+    @media (min-width: $breakpoint-tablet) {
       content: "";
       left: -31px;
       width: 30px;
@@ -48,9 +58,13 @@
       position: absolute;
       background-color: var(--background-color-button);
     }
+
+    @media (min-width: $breakpoint-desktop) {
+      top: 53px;
+    }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-tablet) {
     font-size: 36px;
     line-height: 36px;
     margin-left: 37px;
@@ -61,7 +75,7 @@
   margin-bottom: 49px;
 
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-tablet) {
     margin-bottom: 80px;
   }
 }
@@ -74,7 +88,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  @media (min-width: 768px) and (max-width: 1439px) {
+  @media (min-width: $breakpoint-tablet) and (max-width: 1439px) {
     border: 1px solid var(--pseudo-third-color);
     padding-top: 26px;
   }
@@ -83,7 +97,7 @@
 .extra__item {
   margin-bottom: 31px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-tablet) {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -97,11 +111,11 @@
     }
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $breakpoint-desktop) {
     flex-wrap: nowrap;
     margin: 0;
     width: 896px;
-    margin-bottom: 42px;
+    margin-bottom: 32px;
     padding: 0;
     align-items: center;
   }
@@ -118,14 +132,14 @@
   margin-bottom: 13px;
   display: block;
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-tablet) {
     margin-bottom: 25px;
     display: inline-block;
     font-size: 20px;
     line-height: 20px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $breakpoint-desktop) {
     margin: 0;
     padding: 0;
   }
@@ -140,7 +154,7 @@
   text-align: center;
   color: var(--description-color);
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-tablet) {
     margin-left: 49px;
     font-size: 16px;
     line-height: 20px;
@@ -152,17 +166,22 @@
   justify-content: space-between;
   margin-bottom: 15px;
 
-  @media (min-width: 768px) {
-    &--shugar::after {
+  &::after {
+    @media (min-width: $breakpoint-tablet) {
       content: "";
       position: absolute;
       top: 111px;
-      right: -38px;
       width: 707px;
       height: 1px;
+      right: -38px;
+    }
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    &--shugar::after {
       background-color: var(--pseudo-third-color);
 
-      @media (min-width: 1440px) {
+      @media (min-width: $breakpoint-desktop) {
         top: -21px;
         right: 55px;
         width: 841px;
@@ -170,15 +189,9 @@
     }
 
     &--water::after {
-      content: "";
-      position: absolute;
-      top: 111px;
-      right: -38px;
-      width: 707px;
-      height: 1px;
       background-color: var(--pseudo-third-color);
 
-      @media (min-width: 1440px) {
+      @media (min-width: $breakpoint-desktop) {
         top: -22px;
         right: 55px;
         width: 841px;
@@ -186,48 +199,43 @@
     }
 
     &--milk::after {
-      content: "";
-      position: absolute;
-      top: 111px;
-      right: -38px;
-      width: 707px;
-      height: 1px;
       background-color: var(--pseudo-third-color);
 
-      @media (min-width: 1440px) {
+      @media (min-width: $breakpoint-desktop) {
         top: -21px;
         right: 55px;
         width: 841px;
       }
     }
-  }
 
-  &--vitamins::after {
-    @media (min-width: 1440px) {
-      content: "";
-      position: absolute;
-      top: -22px;
-      right: 55px;
-      width: 841px;
-      height: 1px;
-      background-color: var(--pseudo-third-color);
+    &--vitamins::after {
+      @media (min-width: $breakpoint-desktop) {
+        content: "";
+        position: absolute;
+        top: -22px;
+        right: 55px;
+        width: 841px;
+        height: 1px;
+        background-color: var(--pseudo-third-color);
+      }
+    }
+
+    &--vitamins::before {
+      @media (min-width: $breakpoint-desktop) {
+        content: "";
+        position: absolute;
+        background-color: var(--pseudo-third-color);
+        height: 1px;
+        top: 58px;
+        right: 52px;
+        width: 841px;
+      }
     }
   }
 
-  &--vitamins::before {
-    @media (min-width: 1440px) {
-      content: "";
-      position: absolute;
-      background-color: var(--pseudo-third-color);
-      height: 1px;
-      top: 58px;
-      right: 52px;
-      width: 841px;
-    }
-  }
-
-  @media (min-width: 1440px) {
+  @media (min-width: $breakpoint-desktop) {
     width: 285px;
+    margin-bottom: 0;
 
     &--shugar {
       margin-left: 100px;
@@ -244,15 +252,5 @@
     &--vitamins {
       margin-left: 170px;
     }
-  }
-}
-
-.extra__button {
-  @media (min-width: 768px) {
-    width: 632px;
-  }
-
-  @media (min-width: 1440px) {
-    width: 244px;
   }
 }

@@ -1,14 +1,17 @@
+
+$breakpoint-desktop: 1440px;
+
+$breakpoint-tablet: 768px;
+
 .stock {
   position: relative;
 
-  @media (min-width: 768px) {
-    // min-height: 300px;
+  @media (min-width: $breakpoint-tablet) {
     margin-top: 69px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $breakpoint-desktop) {
     margin-bottom: 35px;
-    // position: absolute;
     position: relative;
     right: 105px;
     width: 245.02px;
@@ -16,7 +19,7 @@
 }
 
 .stock__wrapper {
-  @media (min-width: 1440px) {
+  @media (min-width: $breakpoint-desktop) {
     position: relative;
   }
 }
@@ -31,14 +34,14 @@
   left: 50%;
   margin-left: -58px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-tablet) {
     width: 161px;
     min-height: 60px;
     top: 66px;
     margin-left: 89px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $breakpoint-desktop) {
     width: 161px;
     top: 226px;
     margin-left: -144px;
@@ -67,7 +70,7 @@
   text-align: center;
   color: var(--background-color-primary);
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-tablet) {
     text-align: start;
 
     &::before {
@@ -81,7 +84,7 @@
     }
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $breakpoint-desktop) {
     text-align: center;
 
     &::before {
@@ -100,13 +103,13 @@
   display: block;
   margin: 0 auto;
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-tablet) {
     display: none;
   }
 }
 
 .stock__bg-effect {
-  @media (min-width: 768px) and (max-width: 1439px) {
+  @media (min-width: $breakpoint-tablet) and (max-width: 1439px) {
     background-image: url("../img/catalog/Rectangle-tablet-catalog.svg");
     background-repeat: no-repeat;
     width: 707px;
@@ -117,7 +120,7 @@
     left: 30px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $breakpoint-desktop) {
     background-image: url("../img/catalog/Rectangle-desktop-catalog.svg");
     background-repeat: no-repeat;
     width: 245px;
@@ -130,15 +133,20 @@
 }
 
 .stock__bg {
-  @media (min-width: 768px) and (max-width: 1439px) {
+  @media (min-width: $breakpoint-tablet) and (max-width: 1439px) {
     background-repeat: no-repeat;
     width: 707px;
     height: 200px;
     margin: 0 auto;
     background-image: url("../img/catalog/image-tablet-catalog.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/image-tablet-catalog@x2.png");
+      background-size: 707px auto;
+    }
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $breakpoint-desktop) {
     background-image: url("../img/catalog/image-desktop-catalog.png");
     background-repeat: no-repeat;
     width: 245px;
@@ -147,6 +155,11 @@
     top: 67px;
     right: 68px;
     z-index: 1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/image-desktop-catalog@x2.png");
+      background-size: 245px auto;
+    }
   }
 }
 
@@ -154,7 +167,7 @@
   position: absolute;
   right: 20px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-tablet) {
     display: none;
   }
 }

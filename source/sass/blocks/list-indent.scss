@@ -1,9 +1,12 @@
+
+$breakpoint-tablet: 768px;
+
 .list-indent {
   margin-bottom: 22px;
 }
 
 .list-indent--extra {
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-tablet) {
     display: flex;
     flex-wrap: wrap;
   }
