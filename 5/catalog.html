@@ -11,11 +11,10 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__logo main-header__logo--catalog">
-      <a class="main-header__logo-icon main-header__logo-icon--tablet" href="index.html"><img  class="main-header__logo-mobile" src="img/index/logo-mobile.svg" alt="логотип энерго кот"
+    <div class="main-header__logo">
+      <a class="main-header__logo-medium" href="index.html"><img class="main-header__logo-small" src="img/index/logo-mobile.svg" alt="логотип энерго кот"
           width="33" height="38"></a>
     </div>
-
 
       <div class="main-header__logo-text logo-text">
         <a class="main-header__logo-link" href="index.html"><img src="img/index/logo-txt.svg" alt="логотип"></a>
@@ -41,8 +40,14 @@
       <h1 class="catalog__title">Каталог продукции</h1>
       <ul class="catalog__product-list">
         <li class="catalog__product">
-          <div class="catalog__product-image catalog__product-image--small catalog__product-image--tablet-desktop-chicken-small">
-            <img class="catalog-image" src="img/catalog/catalog-1-desktop.jpg" alt="" width="68" height="86">
+          <div class="catalog__product-image catalog__product-image--small ">
+              <picture>
+                <!-- tablet/desktop -->
+                <source media="(min-width: 768px)" width="161" height="172" srcset="img/catalog/catalog-tablet-desktop-chicken.png" >
+                <!-- mobile -->
+                <img src="img/catalog/catalog-chicken-mobile.jpg" srcset="img/catalog/catalog-chicken-mobile@x2.png 2x" width="68" height="86" alt="банка корма">
+                <!-- <source media="(min-resolution: 2dppx)" srcset="img/catalog/catalog-tablet-desktop-1@x2.png 2x"  width="161" height="172"> -->
+              </picture>
           </div>
           <div class="catalog__product-description">
             <h2 class="catalog__product-title">Cat Energy PRO 500 г</h2>
@@ -51,20 +56,36 @@
               <dt class="catalog__description-term catalog__description-term">Масса</dt>
               <dd class="catalog__description-definition">500 г</dd>
 
-              <dt class="catalog__description-term catalog__description-term--second">Вкус</dt>
+              <dt class="catalog__description-term catalog__description-term--taste">Вкус</dt>
               <dd class="catalog__description-definition">Курица</dd>
 
-              <dt class="catalog__description-term catalog__description-term--third">Цена</dt>
+              <dt class="catalog__description-term catalog__description-term--coast">Цена</dt>
               <dd class="catalog__description-definition">700 ₽</dd>
 
             </dl>
           </div>
-          <div><a class="button button--mobile button--tablet-product" href="#">заказать</a></div>
+          <div><a class="button button--catalog button--tablet-product" href="#">заказать</a></div>
         </li>
         <li class="catalog__product">
 
-          <div class="catalog__product-image catalog__product-image--medium catalog__product-image--tablet-chicken-medium catalog__product-image--desktop-chicken-medium">
-            <img class="catalog-image" src="img/catalog/catalog-2-desktop.jpg" alt="" width="84" height="100">
+          <div class="catalog__product-image catalog__product-image--medium ">
+          <picture>
+
+<!-- desktop -->
+
+<source media="(min-width: 1440px)" srcset="img/catalog/desktop-chicken-medium.png" width="172" height="196">
+
+<!-- tablet -->
+
+<source media="(min-width: 768px)" width="168" height="206" srcset="img/catalog/catalog-tablet-chicken-medium.png" >
+
+
+<!-- mobile -->
+
+            <img src="img/catalog/catalog-chicken-medium-mobile.jpg"
+            srcset="img/catalog/catalog-chicken-medium-mobile@x2.png 2x" alt="" width="84" height="100">
+
+          </picture>
           </div>
           <div class="catalog__product-description">
             <h2 class="catalog__product-title">Cat Energy PRO 1000 г</h2>
@@ -73,20 +94,31 @@
               <dt class="catalog__description-term ">Масса</dt>
               <dd class="catalog__description-definition">1000 г</dd>
 
-              <dt class="catalog__description-term catalog__description-term--second">Вкус</dt>
+              <dt class="catalog__description-term catalog__description-term--taste">Вкус</dt>
               <dd class="catalog__description-definition">Курица</dd>
 
-              <dt class="catalog__description-term catalog__description-term--third">Цена</dt>
+              <dt class="catalog__description-term catalog__description-term--coast">Цена</dt>
               <dd class="catalog__description-definition">1000 ₽</dd>
 
             </dl>
           </div>
-          <a class="button  button--mobile button--tablet-product" href="#">заказать</a>
+          <a class="button  button--catalog" href="#">заказать</a>
 
         </li>
         <li class="catalog__product">
-          <div class="catalog__product-image catalog__product-image--small catalog__product-image--tablet-desktop-fish-small ">
-            <img class="catalog-image" src="img/catalog/catalog-3-desktop.jpg" alt="" width="68" height="78">
+          <div class="catalog__product-image catalog__product-image--small  ">
+
+            <picture>
+
+              <!-- tablet/desktop -->
+
+              <source media="(min-width: 768px)" width="161" height="172" srcset="img/catalog/catalog-tablet-desktop-fish.png">
+              <!-- mobile -->
+
+                  <img src="img/catalog/catalog-fish-mobile.jpg"
+                          srcset="img/catalog/catalog-fish-mobile@x2.png 2x" alt="" width="68" height="78">
+                        </picture>
+
           </div>
           <div class="catalog__product-description">
             <h2 class="catalog__product-title">Cat Energy PRO 500 г</h2>
@@ -95,20 +127,39 @@
               <dt class="catalog__description-term">Масса</dt>
               <dd class="catalog__description-definition">500 г</dd>
 
-              <dt class="catalog__description-term catalog__description-term--second">Вкус</dt>
+              <dt class="catalog__description-term catalog__description-term--taste">Вкус</dt>
               <dd class="catalog__description-definition">рыбы</dd>
 
-              <dt class="catalog__description-term catalog__description-term--third">Цена</dt>
+              <dt class="catalog__description-term catalog__description-term--coast">Цена</dt>
               <dd class="catalog__description-definition">700 ₽</dd>
 
             </dl>
           </div>
-          <a class="button button--mobile button--tablet-product" href="#">заказать</a>
+          <a class="button button--catalog" href="#">заказать</a>
         </li>
         <li class="catalog__product">
           <div class="catalog__product-image catalog__product-image--medium
-          catalog__product-image--tablet-fish-medium catalog__product-image--desktop-fish-medium">
-            <img class="catalog-image" src="img/catalog/catalog-4-desktop.jpg" alt="" width="84" height="100">
+  ">
+
+          <picture>
+
+            <!-- desktop -->
+
+            <source media="(min-width: 1440px)" srcset="img/catalog/desktop-fish-medium.png" width="172" height="196">
+
+            <!-- tablet -->
+
+            <source media="(min-width: 768px)" width="168" height="206" srcset="img/catalog/catalog-tablet-fish-medium.png" >
+
+
+            <!-- mobile -->
+
+                        <img src="img/catalog/catalog-fish-medium-mobile.jpg"
+                        srcset="img/catalog/catalog-fish-medium-mobile@x2.png 2x" alt="" width="84" height="100">
+
+                      </picture>
+
+
           </div>
           <div class="catalog__product-description">
             <h2 class="catalog__product-title">Cat Energy PRO 1000 г</h2>
@@ -117,19 +168,31 @@
               <dt class="catalog__description-term">Масса</dt>
               <dd class="catalog__description-definition">1000 г</dd>
 
-              <dt class="catalog__description-term catalog__description-term--second">Вкус</dt>
+              <dt class="catalog__description-term catalog__description-term--taste">Вкус</dt>
               <dd class="catalog__description-definition">рыба</dd>
 
-              <dt class="catalog__description-term catalog__description-term--third">Цена</dt>
+              <dt class="catalog__description-term catalog__description-term--coast">Цена</dt>
               <dd class="catalog__description-definition">1000 ₽</dd>
 
             </dl>
           </div>
-          <a class="button button--mobile button--tablet-product" href="#">заказать</a>
+          <a class="button button--catalog" href="#">заказать</a>
         </li>
         <li class="catalog__product">
-          <div class="catalog__product-image catalog__product-image--small catalog__product-image--tablet-desktop-buckwheat-small ">
-            <img class="catalog-image" src="img/catalog/catalog-5-desktop.jpg" alt="" width="68" height="78">
+          <div class="catalog__product-image catalog__product-image--small  ">
+
+            <picture>
+
+              <!-- tablet/desktop -->
+
+              <source media="(min-width: 768px)" width="161" height="172" srcset="img/catalog/catalog-tablet-desktop-buckwheat.png">
+              <!-- mobile -->
+
+                  <img src="img/catalog/catalog-buckwheat-mobile.jpg"
+                          srcset="img/catalog/catalog-buckwheat-mobile@x2.png 2x" alt="" width="68" height="78">
+                        </picture>
+
+
           </div>
           <div class="catalog__product-description">
             <h2 class="catalog__product-title">Cat Energy PRO 500 г</h2>
@@ -138,20 +201,39 @@
               <dt class="catalog__description-term">Масса</dt>
               <dd class="catalog__description-definition">500 г</dd>
 
-              <dt class="catalog__description-term catalog__description-term--second">Вкус</dt>
+              <dt class="catalog__description-term catalog__description-term--taste">Вкус</dt>
               <dd class="catalog__description-definition">Гречка</dd>
 
-              <dt class="catalog__description-term catalog__description-term--third">Цена</dt>
+              <dt class="catalog__description-term catalog__description-term--coast">Цена</dt>
               <dd class="catalog__description-definition">400 ₽</dd>
 
             </dl>
           </div>
-          <a class="button button--mobile button--tablet-product" href="#">заказать</a>
+          <a class="button button--catalog" href="#">заказать</a>
         </li>
         <li class="catalog__product">
           <div class="catalog__product-image catalog__product-image--medium
-          catalog__product-image--tablet-buckwheat-medium catalog__product-image--desktop-buckwheat-medium">
-            <img class="catalog-image" src="img/catalog/catalog-6-desktop.jpg" alt="" width="84" height="100">
+          ">
+
+          <picture>
+
+            <!-- desktop -->
+
+            <source media="(min-width: 1440px)" srcset="img/catalog/desktop-buckwheat-medium.png" width="172" height="196">
+
+            <!-- tablet -->
+
+            <source media="(min-width: 768px)" width="168" height="206" srcset="img/catalog/catalog-tablet-buckwheat-medium.png" >
+
+
+            <!-- mobile -->
+
+                        <img src="img/catalog/catalog-buckwheat-medium-mobile.jpg"
+                        srcset="img/catalog/catalog-buckwheat-medium-mobile@x2.png 2x" alt="" width="84" height="100">
+
+                      </picture>
+
+
           </div>
           <div class="catalog__product-description">
             <h2 class="catalog__product-title">Cat Energy slim 1000 г</h2>
@@ -160,20 +242,32 @@
               <dt class="catalog__description-term">Масса</dt>
               <dd class="catalog__description-definition">1000 г</dd>
 
-              <dt class="catalog__description-term catalog__description-term--second">Вкус</dt>
+              <dt class="catalog__description-term catalog__description-term--taste">Вкус</dt>
               <dd class="catalog__description-definition">Гречка</dd>
 
-              <dt class="catalog__description-term catalog__description-term--third">Цена</dt>
+              <dt class="catalog__description-term catalog__description-term--coast">Цена</dt>
               <dd class="catalog__description-definition">700 ₽</dd>
 
             </dl>
           </div>
-          <a class="button button--mobile button--tablet-product" href="#">заказать</a>
+          <a class="button button--catalog" href="#">заказать</a>
 
         </li>
         <li class="catalog__product">
-          <div class="catalog__product-image catalog__product-image--small catalog__product-image--tablet-desktop-rice-small ">
-            <img class="catalog-image" src="img/catalog/catalog-7-desktop.jpg" alt="" width="72" height="84">
+          <div class="catalog__product-image catalog__product-image--small  ">
+
+            <picture>
+
+              <!-- tablet/desktop -->
+
+              <source media="(min-width: 768px)" width="161" height="172" srcset="img/catalog/catalog-tablet-desktop-rice.png">
+              <!-- mobile -->
+
+                  <img src="img/catalog/catalog-rice-mobile.jpg"
+                          srcset="img/catalog/catalog-rice-mobile@x2.png 2x" alt="" width="72" height="84">
+                        </picture>
+
+
           </div>
           <div class="catalog__product-description">
             <h2 class="catalog__product-title">Cat Energy slim 500 г</h2>
@@ -182,15 +276,15 @@
               <dt class="catalog__description-term">Масса</dt>
               <dd class="catalog__description-definition">500 г</dd>
 
-              <dt class="catalog__description-term catalog__description-term--second">Вкус</dt>
+              <dt class="catalog__description-term catalog__description-term--taste">Вкус</dt>
               <dd class="catalog__description-definition">рис</dd>
 
-              <dt class="catalog__description-term catalog__description-term--third">Цена</dt>
+              <dt class="catalog__description-term catalog__description-term--coast">Цена</dt>
               <dd class="catalog__description-definition">500 ₽</dd>
 
             </dl>
           </div>
-            <a class="button button--mobile button--tablet-product" href="#">заказать</a>
+            <a class="button button--catalog " href="#">заказать</a>
 
           <li class="catalog__product catalog__product--show-more">
             <div class="catalog__show-more catalog__show-more--show-more">
@@ -198,14 +292,14 @@
               <p class="catalog__show-more-desc">На самом деле вкусов гораздо больше!</p>
 
             </div>
-            <button class=" button button--tablet-product-show-more button__show-more ">показать все</button>
+            <button class="button button--catalog button--show-more ">показать все</button>
           </li>
       </ul>
     </section>
     </main>
       <div class="extra-stock">
         <div class="extra">
-          <h2 class="extra__title extra__indent">Доролнительные товары</h2>
+          <h2 class="extra__title extra__indent">Дополнительные товары</h2>
           <div class="extra__list-wrapper">
             <ul class="extra__list">
               <li class="extra__item">
@@ -214,7 +308,7 @@
                   <span class="extra__desc-item">1 упаковка (100 г)</span>
                   <span class="extra__desc-item">200 ₽</span>
                 </div>
-                <button class="extra__button button button--mobile button__extra--desktop" type="button">заказать</button>
+                <button class="button__extra button" type="button">заказать</button>
               </li>
               <li class="extra__item">
                 <span class="extra__product-title">питьевая вода</span>
@@ -222,7 +316,7 @@
                   <span class="extra__desc-item">5 литров</span>
                   <span class="extra__desc-item">50 ₽</span>
                 </div>
-                <button class="extra__button button button--mobile button__extra--desktop" type="button">заказать</button>
+                <button class="button__extra button" type="button">заказать</button>
               </li>
               <li class="extra__item">
                 <span class="extra__product-title">молоко</span>
@@ -230,7 +324,7 @@
                   <span class="extra__desc-item">1 литр</span>
                   <span class="extra__desc-item">100 ₽</span>
                 </div>
-                <button class="extra__button button button--mobile button__extra--desktop" type="button">заказать</button>
+                <button class="button__extra button" type="button">заказать</button>
               </li>
               <li class="extra__item extra__item--last-position">
                 <span class="extra__product-title">витамины</span>
@@ -238,7 +332,7 @@
                   <span class="extra__desc-item">1 упаковка (30 г)</span>
                   <span class="extra__desc-item">300 ₽</span>
                 </div>
-                <button class="extra__button button  button--mobile button__extra--desktop" type="button">заказать</button>
+                <button class="button__extra button" type="button">заказать</button>
               </li>
             </ul>
           </div>
