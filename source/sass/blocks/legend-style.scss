@@ -1,7 +1,49 @@
-.legend-style-indent {
+
+$breakpoint-desktop: 1440px;
+
+$breakpoint-tablet: 768px;
+
+.legend-style__indent {
   margin-bottom: 35px;
 
-  @media (min-width: 768px) {
+  &::after {
+    border: 2px solid var(--background-color-button);
+    width: 99px;
+    height: 0;
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 196px;
+
+    @media (min-width: $breakpoint-tablet) {
+      width: 145px;
+      left: 549px;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+      width: 778px;
+      left: 549px;
+    }
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    &::before {
+      border: 2px solid var(--background-color-button);
+      width: 30px;
+      height: 0;
+      content: "";
+      position: absolute;
+      top: 17px;
+      left: -69px;
+
+      @media (min-width: $breakpoint-desktop) {
+        width: 70px;
+        left: -110px;
+      }
+    }
+  }
+
+  @media (min-width: $breakpoint-tablet) {
     margin-bottom: 76px;
   }
 }

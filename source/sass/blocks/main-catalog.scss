@@ -1,11 +1,76 @@
 
+$breakpoint-desktop: 1440px;
+
+$breakpoint-tablet: 768px;
+
 .main-catalog {
-  @media (min-width: 1440px) {
+  position: relative;
+
+  @media (min-width: $breakpoint-desktop) {
     width: 1220px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 570px 570px;
     gap: 80px;
+  }
+
+  &__programs-title-content::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/index/cat_back.svg");
+    width: 50px;
+    height: 53px;
+    left: 30px;
+
+    @media (min-width: $breakpoint-tablet) {
+      width: 200px;
+      height: 211px;
+      content: "";
+      position: absolute;
+      background-image: url("../img/index/cat_back-tablet.svg");
+      left: calc(100% - 271px);
+      background-repeat: no-repeat;
+
+      @media (min-width: $breakpoint-desktop) {
+        content: "";
+        position: absolute;
+        background-image: url("../img/index/cat_back-desktop.svg");
+        width: 100px;
+        height: 106px;
+        background-repeat: no-repeat;
+        left: 68px;
+        top: 20px;
+      }
+    }
+  }
+
+  &__programs-title-svg::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/index/back-panda.svg");
+    width: 67px;
+    height: 50px;
+    left: 30px;
+
+    @media (min-width: $breakpoint-tablet) {
+      width: 268px;
+      height: 200px;
+      content: "";
+      position: absolute;
+      background-image: url("../img/index/back-panda-tablet.svg");
+      left: calc(100% - 304px);
+      background-repeat: no-repeat;
+
+      @media (min-width: $breakpoint-desktop) {
+        content: "";
+        position: absolute;
+        background-image: url("../img/index/back-panda-desktop.svg");
+        width: 134px;
+        height: 100px;
+        left: 49px;
+        top: 31px;
+      }
+    }
   }
 }
 
@@ -19,6 +84,20 @@
   margin: 0;
   margin-top: 30px;
   margin-bottom: 30px;
+  width: 220px;
+  margin-left: 91px;
+
+  @media (min-width: $breakpoint-tablet) {
+    margin-top: 77px;
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 0;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    margin-left: 161px;
+  }
 }
 
 .main-catalog__programs-description {
@@ -28,9 +107,22 @@
   font-size: 14px;
   line-height: 18px;
   color: var(--description-color);
+  display: block;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 42px;
 
-  @media (min-width: 748px) {
+  @media (min-width: $breakpoint-tablet) {
     width: 340px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 52px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    width: 457px;
   }
 }
 
@@ -40,6 +132,44 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--primary-color);
+
+  &::after {
+    @media (max-width: 767px) {
+      position: absolute;
+      width: 240px;
+      height: 0;
+      content: "";
+      left: 15px;
+      top: 206px;
+      border: 1px solid var(--psevdo-color);
+    }
+  }
+
+  &::before {
+    content: "";
+    background-image: url("../img/index/icon-arrow.png");
+    width: 24px;
+    height: 12px;
+    position: absolute;
+    left: 134px;
+    top: 232px;
+
+    @media (min-width: $breakpoint-tablet) {
+      left: 188px;
+      top: 287px;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+      top: 265px;
+    }
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    padding-bottom: 57px;
+  }
 }
 
 .main-catalog__programs {
@@ -48,8 +178,21 @@
   margin: 0 auto;
   flex-direction: column;
   width: 280px;
+  background-color: var(--background-color-secondary);
+  margin-bottom: 20px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  padding-bottom: 22px;
+  position: relative;
 
-  @media (min-width: 748px) {
+  @media (min-width: $breakpoint-tablet) {
     width: 708px;
+    margin-bottom: 30px;
+    padding-left: 53px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    width: 570px;
+    margin-bottom: 0;
   }
 }

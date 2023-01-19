@@ -1,13 +1,23 @@
+$breakpoint-mobile: 767px;
+
+$breakpoint-desktop: 1440px;
+
+$breakpoint-tablet: 768px;
+
 .extra {
-  @media (min-width: 768px) {
+  margin-left: 20px;
+  position: relative;
+
+  @media (min-width: $breakpoint-tablet) {
     width: 707px;
     margin: 0 auto;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $breakpoint-desktop) {
     width: 896px;
-    margin: 0;
+    margin-left: 110px;
     margin-bottom: 86px;
+    position: relative;
   }
 }
 
@@ -18,9 +28,46 @@
   font-size: 24px;
   line-height: 24px;
 
-  @media (min-width: 768px) {
+  &::after {
+    content: "";
+    left: 247px;
+    width: 53px;
+    top: 16px;
+    height: 2px;
+    position: absolute;
+    background-color: var(--background-color-button);
+
+    @media (min-width: $breakpoint-tablet) {
+      width: 328px;
+      left: 410px;
+      top: 23px;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+      top: 53px;
+    }
+  }
+
+  &::before {
+    @media (min-width: $breakpoint-tablet) {
+      content: "";
+      left: -31px;
+      width: 30px;
+      top: 20px;
+      height: 2px;
+      position: absolute;
+      background-color: var(--background-color-button);
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+      top: 53px;
+    }
+  }
+
+  @media (min-width: $breakpoint-tablet) {
     font-size: 36px;
     line-height: 36px;
+    margin-left: 37px;
   }
 }
 
@@ -28,7 +75,7 @@
   margin-bottom: 49px;
 
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-tablet) {
     margin-bottom: 80px;
   }
 }
@@ -39,26 +86,38 @@
   margin: 0;
   margin-bottom: 23px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: $breakpoint-tablet) and (max-width: 1439px) {
+    border: 1px solid var(--pseudo-third-color);
+    padding-top: 26px;
+  }
 }
 
 .extra__item {
   margin-bottom: 31px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-tablet) {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 632px;
     margin: 0 auto;
     margin-bottom: 54px;
+    position: relative;
+
+    &--last-position {
+      margin-bottom: 26px;
+    }
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $breakpoint-desktop) {
     flex-wrap: nowrap;
     margin: 0;
     width: 896px;
-    margin-bottom: 42px;
+    margin-bottom: 32px;
+    padding: 0;
+    align-items: center;
   }
 }
 
@@ -68,15 +127,21 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  text-align: center;
   text-transform: uppercase;
   color: var(--title-color);
+  margin-bottom: 13px;
+  display: block;
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-tablet) {
     margin-bottom: 25px;
     display: inline-block;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -89,7 +154,7 @@
   text-align: center;
   color: var(--description-color);
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-tablet) {
     margin-left: 49px;
     font-size: 16px;
     line-height: 20px;
@@ -99,14 +164,93 @@
 .extra__desc {
   display: flex;
   justify-content: space-between;
-}
+  margin-bottom: 15px;
 
-.extra__button {
-  @media (min-width: 768px) {
-    width: 632px;
+  &::after {
+    @media (min-width: $breakpoint-tablet) {
+      content: "";
+      position: absolute;
+      top: 111px;
+      width: 707px;
+      height: 1px;
+      right: -38px;
+    }
   }
 
-  @media (min-width: 1440px) {
-    width: 244px;
+  @media (min-width: $breakpoint-tablet) {
+    &--shugar::after {
+      background-color: var(--pseudo-third-color);
+
+      @media (min-width: $breakpoint-desktop) {
+        top: -21px;
+        right: 55px;
+        width: 841px;
+      }
+    }
+
+    &--water::after {
+      background-color: var(--pseudo-third-color);
+
+      @media (min-width: $breakpoint-desktop) {
+        top: -22px;
+        right: 55px;
+        width: 841px;
+      }
+    }
+
+    &--milk::after {
+      background-color: var(--pseudo-third-color);
+
+      @media (min-width: $breakpoint-desktop) {
+        top: -21px;
+        right: 55px;
+        width: 841px;
+      }
+    }
+
+    &--vitamins::after {
+      @media (min-width: $breakpoint-desktop) {
+        content: "";
+        position: absolute;
+        top: -22px;
+        right: 55px;
+        width: 841px;
+        height: 1px;
+        background-color: var(--pseudo-third-color);
+      }
+    }
+
+    &--vitamins::before {
+      @media (min-width: $breakpoint-desktop) {
+        content: "";
+        position: absolute;
+        background-color: var(--pseudo-third-color);
+        height: 1px;
+        top: 58px;
+        right: 52px;
+        width: 841px;
+      }
+    }
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    width: 285px;
+    margin-bottom: 0;
+
+    &--shugar {
+      margin-left: 100px;
+    }
+
+    &--water {
+      margin-left: 130px;
+    }
+
+    &--milk {
+      margin-left: 190px;
+    }
+
+    &--vitamins {
+      margin-left: 170px;
+    }
   }
 }

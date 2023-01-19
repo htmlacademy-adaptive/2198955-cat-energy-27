@@ -19,6 +19,7 @@
 @use "./blocks/button.scss";
 @use "./blocks/main-button.scss";
 @use "./blocks/visually-hidden.scss";
+@use "./blocks/map.scss";
 
 //catalog
 
@@ -26,9 +27,7 @@
 @use "./blocks/catalog.scss";
 @use "./blocks/extra.scss";
 @use "./blocks/stock.scss";
-
-//form
-
+@use "./blocks/extra-stock.scss";
 @use "./blocks/fieldsets-indent.scss";
 @use "./blocks/indent-age.scss";
 @use "./blocks/legend-style.scss";

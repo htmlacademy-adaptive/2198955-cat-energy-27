@@ -1,16 +1,20 @@
+$breakpoint-mibile: 767px;
+
+$breakpoint-desktop: 1440px;
+
+$breakpoint-tablet: 768px;
+
 .advantages {
   width: 279px;
   margin: 0 auto;
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-tablet) {
     margin-left: 30px;
-    min-height: 410px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $breakpoint-desktop) {
     width: 1224px;
     margin: 0 auto;
-    min-height: 400px;
   }
 }
 
@@ -20,14 +24,30 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  padding: 0;
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 40px;
+
+  @media (min-width: $breakpoint-tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    width: 375px;
+  }
 }
 
 .advantages__container {
   margin-left: 80px;
   margin-right: 20px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-tablet) {
     margin: 0;
+    width: 617px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    width: 1205px;
+    margin-bottom: 69px;
   }
 }
 
@@ -38,13 +58,13 @@
   display: grid;
   gap: 20px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-tablet) {
     grid-template-columns: 230px 230px;
     row-gap: 37px;
-    column-gap: 153px;
+    column-gap: 137px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $breakpoint-desktop) {
     display: flex;
   }
 }
@@ -56,8 +76,135 @@
   font-size: 14px;
   line-height: 18px;
   color: var(--description-color);
+  position: relative;
+  z-index: 1;
 
-  @media (min-width: 1440px) {
+  &::before {
+    @media (min-width: $breakpoint-tablet) {
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      content: "";
+      background-color: var(--background-color-button);
+      top: 10px;
+      left: 5px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    right: calc(100% + 20px);
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    &::after {
+      width: 112px;
+      height: 280px;
+      position: absolute;
+      content: "";
+      background-repeat: no-repeat;
+      z-index: -1;
+      left: 125px;
+      top: 10px;
+    }
+  }
+
+  &-last-position {
+    @media (max-width: $breakpoint-mibile) {
+      margin-bottom: 53px;
+    }
+  }
+
+  &--leaf::after {
+    @media (max-width: $breakpoint-mibile) {
+      bottom: 0;
+      background-image: url("../img/index/svg-leaf-mobile.svg");
+    }
+  }
+
+  &--leaf::before {
+    @media (min-width: $breakpoint-tablet) {
+      background-image: url("../img/index/Vector-leaf.svg");
+    }
+  }
+
+  &--water::after {
+    @media (max-width: $breakpoint-mibile) {
+      background-image: url("../img/index/svg-water-mobile.svg");
+      top: 4px;
+    }
+  }
+
+  &--water::before {
+    @media (min-width: $breakpoint-tablet) {
+      background-image: url("../img/index/Vector-water.svg");
+    }
+  }
+
+  &--eat::after {
+    @media (max-width: $breakpoint-mibile) {
+      background-image: url("../img/index/svg-eat-mobile.svg");
+      top: 3px;
+    }
+  }
+
+  &--eat::before {
+    @media (min-width: $breakpoint-tablet) {
+      background-image: url("../img/index/Vector-eat.svg");
+    }
+  }
+
+  &--weight::after {
+    @media (max-width: $breakpoint-mibile) {
+      background-image: url("../img/index/svg-weight-mobile.svg");
+      top: 9px;
+    }
+  }
+
+  &--weight::before {
+    @media (min-width: $breakpoint-tablet) {
+      background-image: url("../img/index/Vector-weight.svg");
+    }
+  }
+
+  &--leaf-text::after {
+    @media (min-width: $breakpoint-tablet) {
+      background-image: url("../img/index/first.png");
+    }
+  }
+
+  &--water-text::after {
+    @media (min-width: $breakpoint-tablet) {
+      background-image: url("../img/index/second.png");
+    }
+  }
+
+  &--eat-text::after {
+    @media (min-width: $breakpoint-tablet) {
+      background-image: url("../img/index/third.png");
+    }
+  }
+
+  &--weight-text::after {
+    @media (min-width: $breakpoint-tablet) {
+      background-image: url("../img/index/fourth.png");
+    }
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    min-height: 280px;
+    padding-top: 151px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
     width: 250px;
   }
 }

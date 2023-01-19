@@ -1,24 +1,77 @@
 
+$breakpoint-desktop: 1440px;
+
+$breakpoint-tablet: 768px;
+
+.cooperation__conteiner {
+  @media (min-width: $breakpoint-desktop) {
+    position: relative;
+    width: 1440px;
+  }
+}
 
 .cooperation {
   width: 280px;
-  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  padding-top: 26px;
+  padding-bottom: 26px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-tablet) {
     width: 628px;
     display: flex;
     justify-content: space-between;
     min-height: 199px;
+    padding-left: 70px;
+    padding-right: 70px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $breakpoint-desktop) {
     width: 565px;
+    left: 100px;
+    position: absolute;
+    top: 92px;
+    background-color: var(--background-color-primary);
+    padding: 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @media (min-width: $breakpoint-tablet) {
+      width: 628px;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+      width: 405px;
+      margin: 0 auto;
+    }
   }
 }
 
 .cooperation--catalog {
-  @media (min-width: 768px) {
-    background-color: var(--background-color-secondary);
+  background-color: var(--background-color-secondary);
+
+  @media (min-width: $breakpoint-desktop) {
+    background-color: var(--background-color-primary);
+  }
+}
+
+.cooperation--form {
+  background-color: var(--background-color-secondary);
+  width: 280px;
+
+  @media (min-width: $breakpoint-tablet) {
+    width: 628px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    background-color: var(--background-color-primary);
   }
 }
 
@@ -30,21 +83,20 @@
   line-height: 20px;
   text-transform: uppercase;
   color: var(--secondary-color);
+  margin: 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-tablet) {
     display: flex;
     align-items: center;
     width: 172px;
     font-size: 20px;
     line-height: 26px;
     margin-top: 60px;
-    margin-left: 70px;
     margin-bottom: 56px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $breakpoint-desktop) {
     width: 163px;
-    margin-left: 80px;
   }
 }
 
@@ -56,32 +108,22 @@
   line-height: 20px;
   color: var(--description-color);
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-tablet) {
     display: flex;
     align-items: center;
-    width: 160px;
+    width: 169px;
     font-size: 16px;
     line-height: 20px;
     margin-top: 56px;
-    margin-right: 70px;
     margin-bottom: 63px;
+    justify-content: flex-end;
+    text-align: end;
 
-    @media (min-width: 1440px) {
+    @media (min-width: $breakpoint-desktop) {
       width: 155px;
       margin-top: 56px;
-      margin-right: 80px;
       margin-bottom: 63px;
+      text-align: start;
     }
-  }
-}
-
-.cooperation--form {
-  background-color: var(--background-color-secondary);
-  width: 320px;
-
-  @media (min-width: 768px) {
-    width: 768px;
-    display: flex;
-    justify-content: space-between;
   }
 }
