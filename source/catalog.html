@@ -2,6 +2,10 @@
 <html class="page" lang="ru">
 
 <head>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/cat-ico-32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
@@ -42,10 +46,12 @@
           <div class="catalog__product-image catalog__product-image--small ">
               <picture>
                 <!-- tablet/desktop -->
-                <source media="(min-width: 768px)" width="161" height="172" srcset="img/catalog/catalog-tablet-desktop-chicken.png" >
+
+                <source media="(min-width: 768px)" width="161" height="172" srcset="img/catalog/catalog-tablet-desktop-chicken.png 1x, img/catalog/catalog-tablet-desktop-chicken@x2.png 2x">
+
                 <!-- mobile -->
                 <img src="img/catalog/catalog-chicken-mobile.jpg" srcset="img/catalog/catalog-chicken-mobile@x2.png 2x" width="68" height="86" alt="банка корма">
-                <!-- <source media="(min-resolution: 2dppx)" srcset="img/catalog/catalog-tablet-desktop-1@x2.png 2x"  width="161" height="172"> -->
+
               </picture>
           </div>
           <div class="catalog__product-description">
@@ -72,11 +78,11 @@
 
 <!-- desktop -->
 
-<source media="(min-width: 1440px)" srcset="img/catalog/desktop-chicken-medium.png" width="172" height="196">
+<source media="(min-width: 1440px)" srcset="img/catalog/desktop-chicken-medium.png 1x, img/catalog/catalog-tablet-chicken-medium@x2.png 2x" width="172" height="196">
 
 <!-- tablet -->
 
-<source media="(min-width: 768px)" width="168" height="206" srcset="img/catalog/catalog-tablet-chicken-medium.png" >
+<source media="(min-width: 768px)" width="168" height="206" srcset="img/catalog/catalog-tablet-chicken-medium.png, img/catalog/catalog-tablet-chicken-medium@x2.png 2x" >
 
 
 <!-- mobile -->
@@ -111,7 +117,7 @@
 
               <!-- tablet/desktop -->
 
-              <source media="(min-width: 768px)" width="161" height="172" srcset="img/catalog/catalog-tablet-desktop-fish.png">
+              <source media="(min-width: 768px)" width="161" height="172" srcset="img/catalog/catalog-tablet-desktop-fish.png 1x, img/catalog/catalog-tablet-desktop-fish@x2.png 2x">
               <!-- mobile -->
 
                   <img src="img/catalog/catalog-fish-mobile.jpg"
@@ -144,11 +150,11 @@
 
             <!-- desktop -->
 
-            <source media="(min-width: 1440px)" srcset="img/catalog/desktop-fish-medium.png" width="172" height="196">
+            <source media="(min-width: 1440px)" srcset="img/catalog/desktop-fish-medium.png 1x, img/catalog/desktop-fish-medium@x2.png 2x" width="172" height="196">
 
             <!-- tablet -->
 
-            <source media="(min-width: 768px)" width="168" height="206" srcset="img/catalog/catalog-tablet-fish-medium.png" >
+            <source media="(min-width: 768px)" width="168" height="206" srcset="img/catalog/catalog-tablet-fish-medium.png 1x, img/catalog/catalog-tablet-fish-medium@x2.png 2x" >
 
 
             <!-- mobile -->
@@ -184,7 +190,7 @@
 
               <!-- tablet/desktop -->
 
-              <source media="(min-width: 768px)" width="161" height="172" srcset="img/catalog/catalog-tablet-desktop-buckwheat.png">
+              <source media="(min-width: 768px)" width="161" height="172" srcset="img/catalog/catalog-tablet-desktop-buckwheat.png 1x, img/catalog/catalog-tablet-desktop-buckwheat@x2.png 2x">
               <!-- mobile -->
 
                   <img src="img/catalog/catalog-buckwheat-mobile.jpg"
@@ -218,11 +224,11 @@
 
             <!-- desktop -->
 
-            <source media="(min-width: 1440px)" srcset="img/catalog/desktop-buckwheat-medium.png" width="172" height="196">
+            <source media="(min-width: 1440px)" srcset="img/catalog/desktop-buckwheat-medium.png 1x, img/catalog/desktop-buckwheat-medium@x2.png 2x" width="172" height="196">
 
             <!-- tablet -->
 
-            <source media="(min-width: 768px)" width="168" height="206" srcset="img/catalog/catalog-tablet-buckwheat-medium.png" >
+            <source media="(min-width: 768px)" width="168" height="206" srcset="img/catalog/catalog-tablet-buckwheat-medium.png 1x, img/catalog/catalog-tablet-buckwheat-medium@x2.png 2x" >
 
 
             <!-- mobile -->
@@ -259,7 +265,7 @@
 
               <!-- tablet/desktop -->
 
-              <source media="(min-width: 768px)" width="161" height="172" srcset="img/catalog/catalog-tablet-desktop-rice.png">
+              <source media="(min-width: 768px)" width="161" height="172" srcset="img/catalog/catalog-tablet-desktop-rice.png 1x, img/catalog/catalog-tablet-desktop-rice@x2.png 2x">
               <!-- mobile -->
 
                   <img src="img/catalog/catalog-rice-mobile.jpg"
@@ -346,7 +352,7 @@
         <div class="stock__wrapper">
           <div class="stock__bg-effect"><img class="stock__bg-effect-layer" src="img/catalog/Rectangle-18.svg" alt="котик в сумке"  width="279" height="289"></div>
         <div class="stock__bg">
-          <img class="stock__layer" src="img/catalog/image-cat-background-catalog.jpg" alt="" width="279" height="289">
+          <img class="stock__layer" src="img/catalog/image-cat-background-catalog.jpg" srcset="img/catalog/image-cat-background-catalog@2x.png 2x" alt="" width="279" height="289">
         </div>
         </div>
       </div>
