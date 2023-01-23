@@ -69,6 +69,55 @@ $breakpoint-tablet: 768px;
   }
 }
 
+.advantages__item-leaf-sprite {
+  position: absolute;
+  right: calc(100% + 36px);
+  top: 10px;
+  z-index: 2;
+
+  @media (min-width: $breakpoint-tablet) {
+    // background-image: url("../img/index/Vector-leaf.svg");
+    top: 35px;
+    right: calc(100% + -55px);
+  }
+}
+
+.advantages__item-water-sprite {
+  position: absolute;
+  right: calc(100% + 36px);
+  top: 16px;
+  z-index: 2;
+
+  @media (min-width: $breakpoint-tablet) {
+    top: 35px;
+    right: calc(100% + -55px);
+  }
+}
+
+.advantages__item-eat-sprite {
+  position: absolute;
+  right: calc(100% + 36px);
+  top: 16px;
+  z-index: 2;
+
+  @media (min-width: $breakpoint-tablet) {
+    top: 35px;
+    right: calc(100% + -55px);
+  }
+}
+
+.advantages__item-weight-sprite {
+  position: absolute;
+  right: calc(100% + 36px);
+  top: 16px;
+  z-index: 2;
+
+  @media (min-width: $breakpoint-tablet) {
+    top: 35px;
+    right: calc(100% + -55px);
+  }
+}
+
 .advantages__item {
   font-family: var(--description-font);
   font-style: normal;
@@ -123,52 +172,28 @@ $breakpoint-tablet: 768px;
   &--leaf::after {
     @media (max-width: $breakpoint-mibile) {
       bottom: 0;
-      background-image: url("../img/index/svg-leaf-mobile.svg");
-    }
-  }
-
-  &--leaf::before {
-    @media (min-width: $breakpoint-tablet) {
-      background-image: url("../img/index/Vector-leaf.svg");
+      background-color: var(--background-color-button);
     }
   }
 
   &--water::after {
     @media (max-width: $breakpoint-mibile) {
-      background-image: url("../img/index/svg-water-mobile.svg");
       top: 4px;
-    }
-  }
-
-  &--water::before {
-    @media (min-width: $breakpoint-tablet) {
-      background-image: url("../img/index/Vector-water.svg");
+      background-color: var(--background-color-button);
     }
   }
 
   &--eat::after {
     @media (max-width: $breakpoint-mibile) {
-      background-image: url("../img/index/svg-eat-mobile.svg");
       top: 3px;
-    }
-  }
-
-  &--eat::before {
-    @media (min-width: $breakpoint-tablet) {
-      background-image: url("../img/index/Vector-eat.svg");
+      background-color: var(--background-color-button);
     }
   }
 
   &--weight::after {
     @media (max-width: $breakpoint-mibile) {
-      background-image: url("../img/index/svg-weight-mobile.svg");
       top: 9px;
-    }
-  }
-
-  &--weight::before {
-    @media (min-width: $breakpoint-tablet) {
-      background-image: url("../img/index/Vector-weight.svg");
+      background-color: var(--background-color-button);
     }
   }
 

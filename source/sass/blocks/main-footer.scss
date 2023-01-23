@@ -27,17 +27,19 @@ $breakpoint-tablet: 768px;
 
 .main-footer__logo-text {
   margin-top: 40px;
-  padding-bottom: 42px;
+  padding-bottom: 65px;
   text-align: center;
 
 
   @media (min-width: $breakpoint-tablet) {
     margin-top: 61px;
     width: 143px;
+    padding-bottom: 25px;
   }
 
   @media (min-width: $breakpoint-desktop) {
     margin-top: 71px;
+    padding-bottom: 25px;
   }
 }
 
@@ -64,3 +66,11 @@ $breakpoint-tablet: 768px;
     width: 168px;
   }
 }
+
+.main-footer__copyright-link {
+  display: flex;
+  justify-content: space-between;
+  width: 165px;
+  align-items: center;
+}
+

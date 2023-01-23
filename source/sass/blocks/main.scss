@@ -117,6 +117,12 @@ $breakpoint-tablet: 768px;
   }
 }
 
+.main__promo-image-wrapper {
+  @media (min-width: $breakpoint-tablet) {
+    width: 665px;
+  }
+}
+
 .main__promo-image-wrapper::before {
   @media (min-width: $breakpoint-desktop) {
     content: "";
