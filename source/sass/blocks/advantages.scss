@@ -69,20 +69,19 @@ $breakpoint-tablet: 768px;
   }
 }
 
-.advantages__item-leaf-sprite {
+.advantages__item-leaf-image {
   position: absolute;
   right: calc(100% + 36px);
   top: 10px;
   z-index: 2;
 
   @media (min-width: $breakpoint-tablet) {
-    // background-image: url("../img/index/Vector-leaf.svg");
     top: 35px;
     right: calc(100% + -55px);
   }
 }
 
-.advantages__item-water-sprite {
+.advantages__item-water-image {
   position: absolute;
   right: calc(100% + 36px);
   top: 16px;
@@ -94,7 +93,7 @@ $breakpoint-tablet: 768px;
   }
 }
 
-.advantages__item-eat-sprite {
+.advantages__item-eat-image {
   position: absolute;
   right: calc(100% + 36px);
   top: 16px;
@@ -106,7 +105,7 @@ $breakpoint-tablet: 768px;
   }
 }
 
-.advantages__item-weight-sprite {
+.advantages__item-weight-image {
   position: absolute;
   right: calc(100% + 36px);
   top: 16px;

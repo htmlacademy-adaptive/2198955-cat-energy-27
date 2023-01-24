@@ -1,11 +1,10 @@
-
 $breakpoint-mobile: 767px;
 
 $breakpoint-desktop: 1440px;
 
 $breakpoint-tablet: 768px;
 
-.main-catalog__programs-title-content-cat-back-sprite {
+.main-catalog__programs-title-content-cat-back-image {
   left: 30px;
   position: absolute;
   width: 50px;
@@ -25,7 +24,7 @@ $breakpoint-tablet: 768px;
   }
 }
 
-.main-catalog__programs-title-content-back-panda-sprite {
+.main-catalog__programs-title-content-back-panda-image {
   position: absolute;
   width: 67px;
   height: 50px;
@@ -112,7 +111,7 @@ $breakpoint-tablet: 768px;
   }
 }
 
-.main-catalog__programs-link-arow-sprite {
+.main-catalog__programs-link-arow-image {
   width: 24px;
   height: 12px;
   position: absolute;
@@ -149,25 +148,6 @@ $breakpoint-tablet: 768px;
       top: 206px;
       border: 1px solid var(--psevdo-color);
     }
-  }
-
-  &::before {
-    // content: "";
-    // background-image: url("../img/index/icon-arrow.png");
-    // width: 24px;
-    // height: 12px;
-    // position: absolute;
-    // left: 134px;
-    // top: 232px;
-
-    // @media (min-width: $breakpoint-tablet) {
-    //   left: 188px;
-    //   top: 287px;
-    // }
-
-    // @media (min-width: $breakpoint-desktop) {
-    //   top: 265px;
-    // }
   }
 
   @media (min-width: $breakpoint-tablet) {
