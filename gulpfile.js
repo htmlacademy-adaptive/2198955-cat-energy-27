@@ -63,28 +63,15 @@ const watcher = () => {
   gulp.watch('source/*.html').on('change', browser.reload);
 }
 
-
 // Build
 
 export const build = gulp.series(
   gulp.parallel(
   styles,
   html,
-  ),
-  );
+  ),);
 
 // Default
 
 export default gulp.series(
- html,
- styles,
- server,
- watcher,
- gulp.parallel(
-  styles,
-  html,
-  ),
-  gulp.series(
-  server,
-  watcher
-));
+html,styles,server,watcher,gulp.parallel(styles,html),gulp.series(server,watcher));
