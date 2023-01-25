@@ -21,15 +21,15 @@ export const styles = () => {
     ]))
 
     .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('build', { sourcemaps: '.' }))
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
 
 // HTML
 
 export const html = () => {
-  return gulp.src('sourсe/*.html')
-  
+  return gulp.src('source/*.html')
+
   .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest('build'));
 }
