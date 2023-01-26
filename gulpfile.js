@@ -7,6 +7,8 @@ import rename from 'gulp-rename';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
+import terser from 'gulp-terser';
+import squoosh from 'gulp-libsquoosh'
 
 // Styles
 
@@ -36,18 +38,31 @@ export const html = () => {
 
 // Scripts
 
-const scripts = () => {
+export const scripts = () => {
   return gulp.src('source/js/script.js')
+  .pipe(terser())
   .pipe(gulp.dest('build/js'))
-  .pipe(browser.stream());
-  }
+}
+
+//Images
+
+export const optimizeImages = () => {
+  return gulp.src('source/img/**/*.{jpg,png}')
+  .pipe(squoosh())
+  .pipe(gulp.dest('build/img'))
+}
+
+const copyImages = () => {
+  return gulp.src('source/img/**/*.{jpg,png}')
+  .pipe(gulp.dest('build/img'))
+}
 
 // Server
 
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -69,9 +84,13 @@ export const build = gulp.series(
   gulp.parallel(
   styles,
   html,
+  Images,
+  copy,
+  optimizeImages,
+  scripts,
   ),);
 
 // Default
 
 export default gulp.series(
-html,styles,server,watcher,gulp.parallel(styles,html),gulp.series(server,watcher));
+html,styles,scripts,copy,copyImages,Images,copyImages,server,watcher,gulp.parallel(styles,html),gulp.series(server,watcher));
