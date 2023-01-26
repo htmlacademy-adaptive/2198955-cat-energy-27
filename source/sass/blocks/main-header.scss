@@ -1,4 +1,3 @@
-
 $breakpoint-desktop: 1440px;
 
 $breakpoint-tablet: 768px;
@@ -38,6 +37,12 @@ $breakpoint-tablet: 768px;
   }
 }
 
+.main-header__logo-text-image {
+  width: 101px;
+  height: 19px;
+  position: absolute;
+}
+
 .logo-text {
   @media (max-width: 767px) {
     position: absolute;
@@ -52,17 +57,39 @@ $breakpoint-tablet: 768px;
   }
 }
 
-.main-header__logo-medium {
+.main-header__logo-medium-image {
+  display: none;
+
   @media (min-width: $breakpoint-tablet) {
-    background-image: url("../img/index/logo-tablet.svg");
     width: 174px;
     height: 52px;
+    display: block;
+
+    @media (min-width: $breakpoint-desktop) {
+      display: none;
+    }
+  }
+}
+
+.main-header__logo-footer {
+  margin-left: -105px;
+}
+
+.main-header__logo-big-image {
+  display: none;
+
+  @media (min-width: $breakpoint-desktop) {
+    width: 202px;
+    height: 59px;
+    position: absolute;
     display: block;
   }
 }
 
-.main-header__logo-small {
+.main-header__logo-small-image {
   margin-left: 10px;
+  width: 34px;
+  height: 38px;
 
   @media (min-width: $breakpoint-tablet) {
     display: none;

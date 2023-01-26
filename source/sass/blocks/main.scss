@@ -1,4 +1,3 @@
-
 $breakpoint-desktop: 1440px;
 $breakpoint-tablet: 768px;
 
@@ -114,6 +113,12 @@ $breakpoint-tablet: 768px;
 
   @media (min-width: $breakpoint-tablet) {
     display: none;
+  }
+}
+
+.main__promo-image-wrapper {
+  @media (min-width: $breakpoint-tablet) {
+    width: 665px;
   }
 }
 
