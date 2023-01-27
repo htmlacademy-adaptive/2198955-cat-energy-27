@@ -71,49 +71,49 @@ $breakpoint-tablet: 768px;
 
 .advantages__item-leaf-image {
   position: absolute;
-  right: calc(100% + 36px);
-  top: 10px;
+  right: calc(100% + 20px);
+  top: -6px;
   z-index: 2;
 
   @media (min-width: $breakpoint-tablet) {
-    top: 35px;
-    right: calc(100% + -55px);
+    top: 19px;
+    right: calc(100% - 73px);
   }
 }
 
 .advantages__item-water-image {
   position: absolute;
-  right: calc(100% + 36px);
-  top: 16px;
+  right: calc(100% + 20px);
+  top: 0;
   z-index: 2;
 
   @media (min-width: $breakpoint-tablet) {
-    top: 35px;
-    right: calc(100% + -55px);
+    top: 19px;
+    right: calc(100% - 73px);
   }
 }
 
 .advantages__item-eat-image {
   position: absolute;
-  right: calc(100% + 36px);
-  top: 16px;
+  right: calc(100% + 20px);
+  top: -6px;
   z-index: 2;
 
   @media (min-width: $breakpoint-tablet) {
-    top: 35px;
-    right: calc(100% + -55px);
+    top: 19px;
+    right: calc(100% - 73px);
   }
 }
 
 .advantages__item-weight-image {
   position: absolute;
-  right: calc(100% + 36px);
-  top: 16px;
+  right: calc(100% + 20px);
+  top: 0;
   z-index: 2;
 
   @media (min-width: $breakpoint-tablet) {
-    top: 35px;
-    right: calc(100% + -55px);
+    top: 19px;
+    right: calc(100% - 73px);
   }
 }
 
@@ -171,28 +171,28 @@ $breakpoint-tablet: 768px;
   &--leaf::after {
     @media (max-width: $breakpoint-mibile) {
       bottom: 0;
-      background-color: var(--background-color-button);
+      // background-color: var(--background-color-button);
     }
   }
 
   &--water::after {
     @media (max-width: $breakpoint-mibile) {
       top: 4px;
-      background-color: var(--background-color-button);
+      // background-color: var(--background-color-button);
     }
   }
 
   &--eat::after {
     @media (max-width: $breakpoint-mibile) {
       top: 3px;
-      background-color: var(--background-color-button);
+      // background-color: var(--background-color-button);
     }
   }
 
   &--weight::after {
     @media (max-width: $breakpoint-mibile) {
       top: 9px;
-      background-color: var(--background-color-button);
+      // background-color: var(--background-color-button);
     }
   }
 
