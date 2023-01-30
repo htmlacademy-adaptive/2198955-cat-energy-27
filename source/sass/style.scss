@@ -1,1 +1,39 @@
-// Начните писать стили здесь
+// fonts
+@use "fonts.scss";
+
+//variable
+
+@use "./variable.scss";
+
+//index
+
+@use "./blocks/page.scss";
+@use "./blocks/page__body.scss";
+@use "./blocks/main-header.scss";
+@use "./blocks/main-nav.scss";
+@use "./blocks/main.scss";
+@use "./blocks/advantages.scss";
+@use "./blocks/example.scss";
+@use "./blocks/cooperation.scss";
+@use "./blocks/main-footer.scss";
+@use "./blocks/button.scss";
+@use "./blocks/main-button.scss";
+@use "./blocks/visually-hidden.scss";
+@use "./blocks/map.scss";
+@use "./blocks/socials";
+
+//catalog
+
+@use "./blocks/main-catalog.scss";
+@use "./blocks/catalog.scss";
+@use "./blocks/extra.scss";
+@use "./blocks/stock.scss";
+@use "./blocks/extra-stock.scss";
+@use "./blocks/fieldsets-indent.scss";
+@use "./blocks/indent-age.scss";
+@use "./blocks/legend-style.scss";
+@use "./blocks/list-indent.scss";
+@use "./blocks/indent-name.scss";
+@use "./blocks/section-form.scss";
+@use "./blocks/contacts-owner.scss";
+@use "./blocks/indent-weight.scss";

@@ -1,0 +1,7 @@
+$breakpoint-desktop: 1440px;
+
+.extra-stock {
+  @media (min-width: $breakpoint-desktop) {
+    display: flex;
+  }
+}

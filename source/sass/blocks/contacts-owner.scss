@@ -1,0 +1,53 @@
+$breakpoint-desktop: 1440px;
+
+$breakpoint-tablet: 768px;
+
+.contacts-owner__input {
+  margin-bottom: 14px;
+  width: 220px;
+  padding: 0;
+  border: 1px solid var(--pseudo-third-color);
+  min-height: 45px;
+  padding-top: 4px;
+
+  @media (min-width: $breakpoint-tablet) {
+    width: 548px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    width: 486px;
+    margin-bottom: 67px;
+    min-height: 52px;
+    margin-top: 76px;
+  }
+}
+
+input::placeholder {
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  padding-left: 10px;
+  padding-top: 20px;
+  display: block;
+}
+
+.contacts-owner__input--tel {
+  width: 202px;
+  padding: 0;
+
+  @media (min-width: $breakpoint-tablet) {
+    width: 529px;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    width: 467px;
+    margin-top: 76px;
+    margin-bottom: 67px;
+  }
+}

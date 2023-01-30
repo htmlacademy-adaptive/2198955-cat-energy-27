@@ -1,0 +1,21 @@
+$breakpoint-desktop: 1440px;
+$breakpoint-tablet: 768px;
+
+.page__body {
+  color: var(--primary-color);
+  margin: 0 auto;
+  width: 320px;
+  background-color: var(--background-color-primary);
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .page__body {
+    width: 768px;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .page__body {
+    width: 1440px;
+  }
+}

@@ -1,0 +1,28 @@
+
+:root {
+  // media
+
+  $breakpoint-mibile: 767px;
+  $breakpoint-tablet: 768px;
+  $breakpoint-desktop: 1440px;
+
+  // fonts
+
+  --title-font: "Oswald", "Arial", sans-serif;
+  --description-font: "Lato", "Tahoma", sans-serif;
+
+  // colors
+
+  --primary-color: #000000;
+  --secondary-color: #111111;
+  --description-color: #444444;
+  --title-color: #222222;
+  --pseudo-color: #d9d9d9;
+  --pseudo-secondary-color: #ebebeb;
+  --pseudo-third-color: #cdcdcd;
+  --input-color: #e7e7e7;
+  --background-color-primary: #ffffff;
+  --background-color-secondary: #f2f2f2;
+  --background-color-button: #68b738;
+  --pseudo-fourth-color: #e6e6e6;
+}

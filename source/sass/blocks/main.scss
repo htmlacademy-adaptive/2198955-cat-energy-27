@@ -1,0 +1,201 @@
+$breakpoint-desktop: 1440px;
+$breakpoint-tablet: 768px;
+
+.main {
+  @media (min-width: $breakpoint-desktop) {
+    position: relative;
+  }
+}
+
+.main__promo-section {
+  position: relative;
+
+  @media (min-width: $breakpoint-tablet) {
+    margin: 0 auto;
+    width: 709px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    width: 1220px;
+    margin-left: 110px;
+  }
+}
+
+.main__promo-text {
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--background-color-primary);
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  margin-top: 25px;
+  z-index: 1;
+
+  @media (min-width: $breakpoint-tablet) {
+    color: var(--primary-color);
+    font-style: normal;
+    font-size: 60px;
+    line-height: 60px;
+    width: 416px;
+    text-align: left;
+    margin-bottom: 41px;
+    position: static;
+    margin-left: 88px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    margin-left: 80px;
+    z-index: 3;
+    position: absolute;
+    margin-top: 49px;
+    width: 417px;
+  }
+}
+
+.main__promo-text-description {
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: var(--background-color-primary);
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  margin-top: 122px;
+  z-index: 1;
+  left: 60px;
+  text-transform: uppercase;
+
+  @media (min-width: $breakpoint-tablet) {
+    color: var(--primary-color);
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    position: static;
+    text-align: left;
+    margin-left: 88px;
+    margin-top: 41px;
+    width: 283px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    margin-left: 21px;
+    position: relative;
+    z-index: 2;
+    display: block;
+    top: 210px;
+    width: 283px;
+  }
+}
+
+.main__promo-image {
+  margin-bottom: 138px;
+
+  @media (min-width: $breakpoint-tablet) {
+    background-color: var(--background-color-primary);
+    display: none;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    position: absolute;
+  }
+}
+
+.main__promo-image-wrapper::after {
+  content: "";
+  background-image: url("../img/index/Rectangle-17.svg");
+  width: 320px;
+  height: 302px;
+  position: absolute;
+  right: 0;
+
+  @media (min-width: $breakpoint-tablet) {
+    display: none;
+  }
+}
+
+.main__promo-image-wrapper {
+  @media (min-width: $breakpoint-tablet) {
+    width: 665px;
+  }
+}
+
+.main__promo-image-wrapper::before {
+  @media (min-width: $breakpoint-desktop) {
+    content: "";
+    background-image: url("../img/index/index-background-desktop.jpg");
+    width: 721px;
+    height: 696px;
+    position: absolute;
+    top: -185px;
+    left: 609px;
+    background-size: cover;
+  }
+}
+
+.main__promo-background {
+  position: absolute;
+  top: 167px;
+  left: 20px;
+
+
+  @media (min-width: $breakpoint-tablet) {
+    display: none;
+  }
+}
+
+.main__promo-wrapper-background::after {
+  @media (min-width: $breakpoint-tablet) {
+    position: relative;
+    background-image: url("../img/index/index-can-tablet.png");
+    width: 654px;
+    height: 609px;
+    content: "";
+    top: -1px;
+    left: 36px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    margin-top: 20px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/index-can-tablet@x2.png");
+      background-size: 595px auto;
+    }
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    left: 449px;
+    position: relative;
+    top: -69px;
+    z-index: 0;
+    width: 552px;
+    height: 499px;
+    background-size: cover;
+    content: "";
+    background-image: url("../img/index/index-can-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/index-can-desktop@x2.png");
+      background-size: 552px auto;
+    }
+  }
+}
+
+.main__promo-wrapper-background::before {
+  @media (min-width: $breakpoint-desktop) {
+    width: 720px;
+    height: 694px;
+    content: "";
+    top: -185px;
+    left: 610px;
+    background-image: url("../img/index/Rectangle-17.svg");
+    position: absolute;
+  }
+}
