@@ -21,8 +21,8 @@ $breakpoint-tablet: 768px;
   @media (min-width: $breakpoint-desktop) {
     width: 100px;
     height: 106px;
-    left: 68px;
-    top: 20px;
+    left: 54px;
+    top: 40px;
   }
 }
 
@@ -43,8 +43,8 @@ $breakpoint-tablet: 768px;
   @media (min-width: $breakpoint-desktop) {
     width: 134px;
     height: 100px;
-    left: 49px;
-    top: 31px;
+    left: 35px;
+    top: 45px;
   }
 }
 
@@ -85,6 +85,8 @@ $breakpoint-tablet: 768px;
 
   @media (min-width: $breakpoint-desktop) {
     margin-left: 161px;
+    width: 227px;
+    margin-top: 80px;
   }
 }
 
@@ -112,6 +114,8 @@ $breakpoint-tablet: 768px;
 
   @media (min-width: $breakpoint-desktop) {
     width: 457px;
+    margin-top: 47px;
+    margin-bottom: 29px;
   }
 }
 
@@ -128,7 +132,7 @@ $breakpoint-tablet: 768px;
   }
 
   @media (min-width: $breakpoint-desktop) {
-    top: 265px;
+    top: 294px;
   }
 }
 
@@ -161,6 +165,10 @@ $breakpoint-tablet: 768px;
     font-size: 20px;
     line-height: 30px;
   }
+
+  @media (min-width: $breakpoint-desktop) {
+    padding-bottom: 56px;
+  }
 }
 
 .main-catalog__programs {
@@ -186,5 +194,6 @@ $breakpoint-tablet: 768px;
   @media (min-width: $breakpoint-desktop) {
     width: 570px;
     margin-bottom: 0;
+    margin-top: 65px;
   }
 }

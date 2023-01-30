@@ -35,6 +35,10 @@ $breakpoint-tablet: 768px;
     line-height: 60px;
     width: 375px;
   }
+
+  @media (min-width: $breakpoint-desktop) {
+    margin-top: 74px;
+  }
 }
 
 .advantages__container {
@@ -104,17 +108,19 @@ $breakpoint-tablet: 768px;
   top: -3px;
   z-index: 2;
 
-
-
   @media (min-width: $breakpoint-tablet) {
     top: 19px;
     right: calc(100% - 82px);
     width: 80px;
     height: 80px;
+  }
 
-
+  @media (min-width: $breakpoint-desktop) {
+    right: calc(100% - 109px);
   }
 }
+
+
 
 .advantages__item-weight-image {
   position: absolute;
@@ -128,7 +134,13 @@ $breakpoint-tablet: 768px;
     width: 80px;
     height: 80px;
   }
+
+  @media (min-width: $breakpoint-desktop) {
+    top: 25px;
+    right: calc(100% - 123px);
+  }
 }
+
 
 .advantages__item {
   font-family: var(--description-font);
@@ -146,6 +158,10 @@ $breakpoint-tablet: 768px;
         margin: 0;
         padding: 0;
         margin-top: -10px;
+
+        @media (min-width: $breakpoint-desktop) {
+          width: 204px;
+        }
       }
     }
   }
@@ -171,6 +187,12 @@ $breakpoint-tablet: 768px;
         margin: 0;
         padding: 0;
         margin-top: -20px;
+
+        @media (min-width: $breakpoint-desktop) {
+          margin-left: 28px;
+          margin-top: -17px;
+          width: 214px;
+        }
       }
     }
   }
@@ -183,6 +205,10 @@ $breakpoint-tablet: 768px;
         margin-top: -16px;
         margin-left: 17px;
         width: 245px;
+
+        @media (min-width: $breakpoint-desktop) {
+          margin-left: 40px;
+        }
       }
     }
   }
@@ -260,6 +286,10 @@ $breakpoint-tablet: 768px;
       left: 125px;
       top: 20px;
     }
+
+    @media (min-width: $breakpoint-desktop) {
+      left: 154px;
+    }
   }
 
   &--weight-text::after {
@@ -267,6 +297,11 @@ $breakpoint-tablet: 768px;
       background-image: url("../img/index/fourth.png");
       left: 144px;
       top: 18px;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+      left: 165px;
+      top: 22px;
     }
   }
 
@@ -279,6 +314,6 @@ $breakpoint-tablet: 768px;
   }
 
   @media (min-width: $breakpoint-desktop) {
-    width: 250px;
+    width: 175px;
   }
 }

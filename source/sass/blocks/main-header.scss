@@ -20,8 +20,8 @@ $breakpoint-tablet: 768px;
   @media (min-width: $breakpoint-desktop) {
     width: 1200px;
     margin-right: 110px;
-    margin-left: 110px;
-    padding-top: 69px;
+    margin-left: 83px;
+    padding-top: 51px;
   }
 
   &__logo--catalog ::after {
@@ -81,8 +81,10 @@ $breakpoint-tablet: 768px;
   @media (min-width: $breakpoint-desktop) {
     width: 202px;
     height: 59px;
-    position: absolute;
+    position: relative;
     display: block;
+    top: 3px;
+    margin-left: 27px;
   }
 }
 

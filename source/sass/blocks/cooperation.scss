@@ -20,7 +20,6 @@ $breakpoint-tablet: 768px;
     width: 628px;
     display: flex;
     justify-content: space-between;
-    min-height: 199px;
     padding-left: 70px;
     padding-right: 70px;
   }
@@ -89,8 +88,8 @@ $breakpoint-tablet: 768px;
     width: 172px;
     font-size: 20px;
     line-height: 26px;
-    margin-top: 60px;
-    margin-bottom: 56px;
+    margin-bottom: 35px;
+    margin-top: 10px;
   }
 
   @media (min-width: $breakpoint-desktop) {
@@ -113,7 +112,7 @@ $breakpoint-tablet: 768px;
     width: 169px;
     font-size: 16px;
     line-height: 20px;
-    margin-top: 56px;
+    margin-top: 15px;
     margin-bottom: 63px;
     justify-content: flex-end;
     text-align: end;
