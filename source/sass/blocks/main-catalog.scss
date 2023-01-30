@@ -5,22 +5,24 @@ $breakpoint-desktop: 1440px;
 $breakpoint-tablet: 768px;
 
 .main-catalog__programs-title-content-cat-back-image {
-  left: 30px;
+  left: 21px;
+  top: 22px;
   position: absolute;
   width: 50px;
   height: 53px;
 
   @media (min-width: $breakpoint-tablet) {
-    left: calc(100% - 271px);
+    left: calc(100% - 261px);
     width: 200px;
     height: 211px;
+    top: 85px;
   }
 
   @media (min-width: $breakpoint-desktop) {
     width: 100px;
     height: 106px;
-    left: 68px;
-    top: 20px;
+    left: 54px;
+    top: 40px;
   }
 }
 
@@ -28,19 +30,21 @@ $breakpoint-tablet: 768px;
   position: absolute;
   width: 67px;
   height: 50px;
-  left: 30px;
+  left: 14px;
+  top: 23px;
 
   @media (min-width: $breakpoint-tablet) {
     width: 268px;
     height: 200px;
-    left: calc(100% - 304px);
+    left: calc(100% - 296px);
+    top: 94px;
   }
 
   @media (min-width: $breakpoint-desktop) {
     width: 134px;
     height: 100px;
-    left: 49px;
-    top: 31px;
+    left: 35px;
+    top: 45px;
   }
 }
 
@@ -66,7 +70,7 @@ $breakpoint-tablet: 768px;
   margin: 0;
   margin-top: 30px;
   margin-bottom: 30px;
-  margin-left: 91px;
+  margin-left: 72px;
   width: 139px;
   display: block;
 
@@ -81,6 +85,8 @@ $breakpoint-tablet: 768px;
 
   @media (min-width: $breakpoint-desktop) {
     margin-left: 161px;
+    width: 227px;
+    margin-top: 80px;
   }
 }
 
@@ -108,6 +114,8 @@ $breakpoint-tablet: 768px;
 
   @media (min-width: $breakpoint-desktop) {
     width: 457px;
+    margin-top: 47px;
+    margin-bottom: 29px;
   }
 }
 
@@ -115,8 +123,8 @@ $breakpoint-tablet: 768px;
   width: 24px;
   height: 12px;
   position: absolute;
-  left: 134px;
-  top: 232px;
+  left: 122px;
+  top: 230px;
 
   @media (min-width: $breakpoint-tablet) {
     left: 188px;
@@ -124,7 +132,7 @@ $breakpoint-tablet: 768px;
   }
 
   @media (min-width: $breakpoint-desktop) {
-    top: 265px;
+    top: 294px;
   }
 }
 
@@ -152,6 +160,14 @@ $breakpoint-tablet: 768px;
 
   @media (min-width: $breakpoint-tablet) {
     padding-bottom: 57px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    padding-bottom: 56px;
   }
 }
 
@@ -172,10 +188,12 @@ $breakpoint-tablet: 768px;
     width: 708px;
     margin-bottom: 30px;
     padding-left: 53px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $breakpoint-desktop) {
     width: 570px;
     margin-bottom: 0;
+    margin-top: 65px;
   }
 }
