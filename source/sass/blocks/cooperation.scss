@@ -13,8 +13,6 @@ $breakpoint-tablet: 768px;
   width: 280px;
   padding-left: 20px;
   padding-right: 20px;
-  display: flex;
-  align-items: center;
   padding-top: 26px;
   padding-bottom: 26px;
 
@@ -83,6 +81,7 @@ $breakpoint-tablet: 768px;
   text-transform: uppercase;
   color: var(--secondary-color);
   margin: 0;
+  width: 139px;
 
   @media (min-width: $breakpoint-tablet) {
     display: flex;
@@ -106,6 +105,7 @@ $breakpoint-tablet: 768px;
   font-size: 14px;
   line-height: 20px;
   color: var(--description-color);
+  width: 139px;
 
   @media (min-width: $breakpoint-tablet) {
     display: flex;

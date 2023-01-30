@@ -32,7 +32,7 @@ $breakpoint-tablet: 768px;
   padding: 0;
   margin: 0;
   position: absolute;
-  margin-top: 27px;
+  margin-top: 25px;
   z-index: 1;
 
   @media (min-width: $breakpoint-tablet) {
@@ -66,9 +66,10 @@ $breakpoint-tablet: 768px;
   padding: 0;
   margin: 0;
   position: absolute;
-  margin-top: 112px;
+  margin-top: 122px;
   z-index: 1;
-  left: 77px;
+  left: 60px;
+  text-transform: uppercase;
 
   @media (min-width: $breakpoint-tablet) {
     color: var(--primary-color);
@@ -79,6 +80,7 @@ $breakpoint-tablet: 768px;
     text-align: left;
     margin-left: 88px;
     margin-top: 41px;
+    width: 283px;
   }
 
   @media (min-width: $breakpoint-desktop) {
@@ -150,12 +152,13 @@ $breakpoint-tablet: 768px;
   @media (min-width: $breakpoint-tablet) {
     position: relative;
     background-image: url("../img/index/index-can-tablet.png");
-    width: 595px;
+    width: 654px;
     height: 609px;
     content: "";
-    top: 0;
-    left: 77px;
+    top: -1px;
+    left: 36px;
     background-repeat: no-repeat;
+    background-size: cover;
     display: block;
     margin-top: 20px;
 
